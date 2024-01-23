@@ -1,0 +1,1768 @@
+<!-- 
+    ///////////////////////////////////////////////////////////////////////////
+     Title: MOCIBA Semántico 2021
+     Description: Un vocabulario para el dominio del ciberacoso de // acuerdo con la documentación del Módulo sobre Ciberacoso (MOCIBA) aplicado en 2021 y 2022 por el Instituto Nacional de Estadística y Geografía (INEGI).
+     Language: Español.
+     Country:   México.
+     Citar:  Medina N. M. A., De la Calleja M. J., López D. E., Hernández V. Y., Arrieta D. D. (2023). MOCIBA Semántico 2021 [Compilación de datos (base de datos)]. Certificado del Registro Público del Derecho de Autor No. 03-2023-021409255800-01.
+     http://www.mauxmedina.com/vocabularies/mocibaSemantico.html
+    /////////////////////////////////////////////////
+     -->
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://www.mauxmedina.com/vocabularies/mociba2022"
+     xml:base="http://www.mauxmedina.com/vocabularies/mociba2022"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:moci="http://www.mauxmedina.com/vocabularies/mociba2022.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:data-view="http://www.w3.org/2003/g/data-view#"
+     xmlns:mocibaSemantico2021="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#">
+    <owl:Ontology rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl">
+        <owl:imports rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dc:contributor rdf:resource="http://www.mauxmedina.com/sem/csDAD.html"/>
+        <dc:contributor rdf:resource="https://www.mauxmedina.com/sem/csELD.html"/>
+        <dc:contributor rdf:resource="https://www.mauxmedina.com/sem/csJDLCM.html"/>
+        <dc:contributor rdf:resource="https://www.mauxmedina.com/sem/csYHV.html"/>
+        <dc:creator rdf:resource="http://www.mauxmedina.com/sem/csMAMN.html"/>
+        <dc:description xml:lang="en">Un vocabulario para organizar los conceptos del Módulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de Estadística y Geografía (INEGI)</dc:description>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-09</dc:modified>
+        <dc:rights>CC BY-NC-SA 4.0 DEED</dc:rights>
+        <dc:title xml:lang="es">Vocabulario de ciberacoso </dc:title>
+        <vann:preferredNamespacePrefix>moci</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.mauxmedina.com/vocabularies/mocibaSemantico2021/moci#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="es">MOCIBA semantico 2021</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"/>
+        <rdfs:range rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:comment xml:lang="es">Una persona acosadora actúa por alguno o varios motivos, éstos están representados como elementos de la clase MotivacionPersonaAcosadora.</rdfs:comment>
+        <rdfs:label xml:lang="es">actuaPor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA -->
+
+    <owl:ObjectProperty rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"/>
+        <rdfs:range rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"/>
+        <rdfs:comment xml:lang="es">La propiedad &quot;afectaA&quot; está asociada con la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: &quot;4. En el último año, esto es, de agosto 2020 a la fecha, dígame si por teléfono, celular o internet, ¿alguien realizó la situación (NÚMERO DE SITUACIÓN)?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una persona acosadora &quot;afectaA&quot; una víctima. La existencia de esta relación describe en su forma más simple a una situación de acoso.</rdfs:comment>
+        <rdfs:label xml:lang="es">afectaA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA -->
+
+    <owl:ObjectProperty rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"/>
+        <rdfs:range rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:comment xml:lang="es">Algunas veces, una persona víctima identifica a una o más personas acosadoras; las identidades de las personas acosadoras están representadas como elementos de la clase IdentidadPersonaAcosadora.</rdfs:comment>
+        <rdfs:label xml:lang="es">identificaA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe -->
+
+    <owl:ObjectProperty rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"/>
+        <rdfs:range rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">Una persona víctima percibe o experimenta situaciones de acoso, éstas están representadas como elementos de la clase SituacionDeAcosoExperimentada.</rdfs:comment>
+        <rdfs:label xml:lang="es">percibe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa -->
+
+    <owl:ObjectProperty rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:comment xml:lang="es">Una persona encuestada o una persona acosadora utiliza medios digitales, éstos están representados como elementos de la clase MedioDigital.</rdfs:comment>
+        <rdfs:label xml:lang="es">usa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;AccionContraElCiberacoso&quot; está asociada con la pregunta 12 del cuestionario MOCIBA 2021 que a la letra dice: &quot;12. ¿Qué acciones tomó o ha tomado como consecuencia de la(s) situación(es) que vivió(vive)?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Las acciones o medidas que ha realizado la persona víctima de ciberacoso como consecuencia de la situación o situaciones que vive o vivió son:
+
+1) Bloquear (a la persona, cuenta o página)
+2) Cambiar o cancelar número telefónico, cuenta o contraseña
+3) Eliminar la publicación, el mensaje o video
+4) Reclamar o confrontar a la persona
+5) Denunciar ante el Ministerio Público o policía
+6) Reportar con el proveedor del servicio o plataforma
+7) Informar a una persona (padre, amigos, etcétera)
+8) Ignorar o no contestar
+9) Publicar la situación en redes sociales (Facebook, Twitter, etc.)
+10) Denunciar ante las autoridades escolares o laborales
+11) Otra
+12) Ninguna
+13) No sabe o no responde</rdfs:comment>
+        <rdfs:label xml:lang="es">AccionContraElCiberacoso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico">
+        <owl:equivalentClass rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso"/>
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"/>
+        <rdfs:comment>La clase contiene los nombres de los autores de este vocabulario u ontología.</rdfs:comment>
+        <rdfs:label>Autor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:comment xml:lang="es">El ciberacoso es un acto intencionado, ya sea por parte de un individuo o un grupo, teniendo como fin el dañar o molestar a una persona mediante el uso de tecnologías de información y comunicación (TIC), en específico, el internet.</rdfs:comment>
+        <rdfs:comment xml:lang="es">El ciberacoso puede generar daños morales, psicológicos y económicos, incluso, provocar ideaciones suicidas en la víctima y con ello, crear una forma de victimización relevante.</rdfs:comment>
+        <rdfs:label>Ciberacoso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#CondicionDeUsoDeMedidasDeSeguridad -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#CondicionDeUsoDeMedidasDeSeguridad">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;CondicionDeUsoDeMedidasDeSeguridad&quot; está asociada con la pregunta 3 del cuestionario MOCIBA 2021 que a la letra dice: &quot;3. En el último año, esto es, de agosto 2020 a la fecha, ¿ha recibido correo basura (spam) o virus para dañar sus equipos o información?&quot;</rdfs:comment>
+        <rdfs:comment>La clase &quot;CondicionDeUsoDeMedidasDeSeguridad&quot; representa si la persona encuestada ha recibido correo basura (spam) o virus.</rdfs:comment>
+        <rdfs:label>CondicionDeUsoDeMedidasDeSeguridad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Cuestionario -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Cuestionario">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"/>
+        <rdfs:comment>El cuestionario es el instrumento de recolección de datos que utiliza el personal del INEGI, está disponible en: https://www.inegi.org.mx/programas/mociba/2021/</rdfs:comment>
+        <rdfs:label>Cuestionario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;EdadPersonaAcosadora&quot; está asociada con la pregunta 7 del cuestionario MOCIBA 2021 que a la letra dice: &quot;7. Aproximadamente, ¿qué edad tiene(n) esa(s) persona(s)?&quot;</rdfs:comment>
+        <rdfs:comment>La clase &quot;EdadPersonaAcosadora&quot; representa la edad de la persona acosadora.</rdfs:comment>
+        <rdfs:label>EdadPersonaAcosadora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;EfectoEnLaVictima&quot; está asociada con la pregunta 10 del cuestionario MOCIBA 2021 que a la letra dice: &quot;10. De la tarjeta 3, dígame ¿qué le provocó esta situación?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Los efectos en la víctima que ha experimentado alguna de las situaciones descritas en la clase &quot;Situación de acoso experimentada&quot; son: 
+1) Nervios
+2) Miedo
+3) Estrés
+4) Desconfianza
+5) Frustración
+6) Inseguridad
+7) Enojo
+8) Problemas con familiares, novio, pareja, amigos o amigas
+9) Pérdida de dinero
+10) Pérdida de trabajo
+11) Daño a su imagen profesional / laboral
+12) Daño a su imagen personal, excluya imagen laboral y escolar
+13) Daño a su imagen escolar (bullying)
+14) Otro
+15) No sabe o no responde</rdfs:comment>
+        <rdfs:label xml:lang="es">EfectoEnLaVictima</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;FrecuenciaDeCiberacoso&quot; está asociada con la pregunta 9 del cuestionario MOCIBA 2021 que dice: &quot;9. Esta situación, ¿ocurrió ...?</rdfs:comment>
+        <rdfs:comment>La clase &quot;FrecuenciaDeCiberacoso&quot; representa la frecuencia de alguna de las situaciones de ciberacoso</rdfs:comment>
+        <rdfs:label>FrecuenciaDeCiberacoso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;IdentidadDeLaPersonaAcosadora&quot; está asociada con la pregunta 5 del cuestionario MOCIBA 2021 que a la letra dice: &quot;5. ¿Quiénes realizaron la situcación número (NÚMERO DE SITUACIÓN EN PREGUNTA 4)?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La identidad de la persona acosadora se refiere a la relación que tiene con la víctima. Las identidades pueden ser:
+
+1) Novio, novia o pareja actual
+2) Ex-novio, ex-novia o ex-pareja
+3) Familiar
+4) Amigo o amiga
+5) Compañero o compañera de clase o de trabajo
+6) Conocido o conocida de poco trato
+7) Conocido o conocida solo de vista
+8) Desconocido o desconocida
+9) Otro
+10) No sabe o no responde</rdfs:comment>
+        <rdfs:label xml:lang="es">IdentidadPersonaAcosadora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;ImportanciaProteccionDeDatos&quot; está asociada con la pregunta 13 del cuestionario MOCIBA 2021 que a la letra dice: &quot;13. ¿Para usted qué tan importante es cuidar su información en internet?.</rdfs:comment>
+        <rdfs:comment>La clase &quot;ImportanciaProteccionDeDatos&quot; representa la importancia de la protección de datos que reporta la persona encuestada</rdfs:comment>
+        <rdfs:label>ImportanciaProteccionDeDatos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021 -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021 -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021">
+        <rdfs:comment xml:lang="es">El objetivo del vocabulario MOCIBA Semántico 2021 es representar los conceptos y las relaciones provenientes del Módulo sobre Ciberacoso (MOCIBA) aplicado en  2021 y 2022 por el Instituto Nacional de Estadística y Geografía (INEGI) a través tecnologías semánticas.</rdfs:comment>
+        <rdfs:label xml:lang="es">MOCIBA Semántico 2021</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;MedidaDeSeguridad&quot; está asociada a la pregunta 2 del cuestionario MOCIBA 2021 que a la letra dice: &quot;2. ¿Qué medidas de seguridad realiza&quot;?.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Las medidas de seguridad que podría realizar la persona encuestada son:
+1) Crear o poner contraseñas (claves, huella digital, patrón, etcétera)
+2) Instalar o actualizar programas antivirus, cortafuegos o antiespías
+3) Bloquear ventanas emergentes del navegador
+4) Cambiar periódicamente las contraseñas
+5) No ingresar a sitios web inseguros o páginas desconocidas
+6) No abrir ni guardar archivos que envían personas desconocidas
+7) No publicar el correo o número telefónico en redes sociales
+8) Otra</rdfs:comment>
+        <rdfs:label xml:lang="es">MedidaDeSeguridad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;MedioDigital&quot; está asociada con la pregunta 11 del cuestionario MOCIBA 2021 que a la letra dice: &quot;11. ¿Qué medios digitales usó(usaron) la(s) persona(s) para molestarle o dañarle?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Los medios digitales usados por la persona acosadora son:
+1) Whatsapp
+2) Facebook
+3) Messenger
+4) Instagram
+5) TikTok
+6) Telegram
+7) Twitter
+8) Youtube
+9) SMS
+10) Correo electrónico institucional
+11) Correo electrónico personal
+12) Llamadas de teléfono celular
+13) Llamadas de teléfono fijo
+14) Otro
+15) No sabe o no responde</rdfs:comment>
+        <rdfs:label xml:lang="es">MedioDigital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;MotivacionDeLaPersonaAcosadora&quot; está asociada con la pregunta 8 del cuestionario que a la letra dice: &quot;8. ¿Por qué cree que lo hizo (RESPUESTA EN PREGUNTA 5)?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Los motivos por los que actúa una persona acosadora son:
+1) Enojo o frustración
+2) Deseo de venganza
+3) Por diversión
+4) Odio o desprecio
+5) Envidia o celos
+6) Intimidarle o causarle miedo
+7) Para obtener un beneficio económico
+8) Para que la víctima hiciera o dejara de hacer algo
+9) Otro
+10) No sabe o no responde</rdfs:comment>
+        <rdfs:label xml:lang="es">MotivacionPersonaAcosadora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;PercepcionDeProteccionDeDatos&quot; está asociada con la pregunta 14 del cuestionario MOCIBA 2021 que a la letra dice: &quot;Y qué tanto considera usted que protege su información en internet?&quot;</rdfs:comment>
+        <rdfs:comment>La clase &quot;PercepcionDeProteccionDeDatos&quot; representa qué tan importante es la protección de datos según la percepción de la persona encuestada</rdfs:comment>
+        <rdfs:label>PercepcionDeProteccionDeDatos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="es">Persona que ha realizado al menos alguna de las situaciones descritas en la clase  &quot;Situación de acoso experimentada&quot;</rdfs:comment>
+        <rdfs:label xml:lang="es">Persona acosadora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="es">Persona que contesta el cuestionario del módulo MOCIBA, es mayor a 12 años y usa internet en cualquier dispositivo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Persona encuestada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"/>
+        <rdfs:comment>El documento titulado &quot;Módulo sobre ciberacoso MOCIBA 2021 principales resultados&quot; está disponible en: https://www.inegi.org.mx/contenidos/programas/mociba/2021/doc/mociba2021_resultados.pdf</rdfs:comment>
+        <rdfs:label>ReportePrincipalesResultados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment>La clase &quot;SexoDeLaPersonaAcosadora&quot; está asociada con la pregunta 6 del cuestionario MOCIBA 2021 que a la letra dice: &quot;6. Esta(s) persona(s), es(son) hombre(s) o mujer(es)?&quot;.</rdfs:comment>
+        <rdfs:comment>La clase &quot;SexoDeLaPersonaAcosadora&quot; representa el sexo de la persona acosadora.</rdfs:comment>
+        <rdfs:label>SexoDeLaPersonaAcosadora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas">
+        <rdfs:label xml:lang="es">Siglas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada">
+        <rdfs:subClassOf rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+        <rdfs:comment xml:lang="es">La clase &quot;SituacionDeAcosoExperimentada&quot; está asociada con las respuestas a la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: &quot;4. En el último año, esto es, de agosto de 2020 a la fecha, dígame si por teléfono, celular o Internet, ¿alguien realizó la situación (NÚMERO DE SITUACIÓN)?&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Las situaciones de acoso que informa una persona encuestada por parte de una o más personas acosadoras son: 
+
+1) Le envió mensajes ofensivos, con insultos o burlas
+2) Le hizo llamadas ofensivas, con insultos o burlas
+3) Lo o la criticó en línea por su apariencia (forma de vestir, tono de piel, peso, estatura, etc.) o clase social
+4) Se hizo pasar por usted para enviar información falsa, insultar o agredir a otras personas
+5) Lo o la contactó con nombres falsos para molestarle o dañarle
+6) Vigiló sus sitios o cuentas en internet para causarle molestia o daño
+7) Lo o la provocó (molestó o retó) en línea para que reaccionara de forma negativa
+8) Le hizo insinuaciones o propuestas de tipo sexual que le molestaron
+9) Le envió fotos o videos de contenido sexual que le molestaron
+10) Publicó, distribuyó, intercambió o vendió imágenes, audios o videos de contenido íntimo sexual reales o simulados de usted sin su consentimiento
+11) Publicó información personal, fotos o videos (falsos o verdaderos) de usted para dañarlo o dañarla. Excluya contenido sexual.
+12) Amenazó con publicar información personal, imágenes, audios o videos de usted (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsión)
+13) Otra</rdfs:comment>
+        <rdfs:label xml:lang="es">SituacionDeAcosoExperimentada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima -->
+
+    <owl:Class rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="es">Persona que ha experimentado alguna de las situaciones descritas en la clase &quot;Situación de acoso experimentada&quot;</rdfs:comment>
+        <rdfs:label xml:lang="es">Víctima</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label>Persona</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mauxmedina.com/sem/csDAD.html -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/sem/csDAD.html">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor"/>
+        <rdfs:comment>Delia Arrieta Díaz</rdfs:comment>
+        <rdfs:label>DAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/sem/csMAMN.html -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/sem/csMAMN.html">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor"/>
+        <rdfs:comment>María Auxilio Medina Nieto</rdfs:comment>
+        <rdfs:label>MAMN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"/>
+        <rdfs:label xml:lang="es">ENDUTIH: Encuesta Nacional sobre Disponibilidad y Uso de las Tecnologías de Información y la Comunicación en Hogares.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"/>
+        <rdfs:label xml:lang="es">INEGI: Instituto Nacional de Estadística y Geografía</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"/>
+        <rdfs:label xml:lang="es">MOCIBA: módulo sobre ciberacoso.</rdfs:label>
+        <rdfs:label xml:lang="es">Módulo sobre ciberacoso. Para persona elegida de 12 y más años que use internet en cualquier dispositivo.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"/>
+        <rdfs:label xml:lang="es">SMS: servicio de mensaje corto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Bloquear (a la persona, cuenta o página)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Denunciar ante las autoridades escolares o laborales</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Otra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Ninguna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">No sabe, no responde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Cambiar o cancelar número telefónico, cuenta o contraseña</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Eliminar la publicación, el mensaje o video</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Reclamar o confrontar a la persona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Denunciar ante el Ministerio Público o policía</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Reportar con el proveedor del servicio o plataforma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Informar a una persona (padres, amigos, etcétera)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Ignorar o no contestar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"/>
+        <rdfs:label xml:lang="es">Publicar la situación en redes sociales (Facebook, Twitter, etc)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algo -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algo">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos"/>
+        <rdfs:label>algo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algoImportante -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algoImportante">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos"/>
+        <rdfs:label>algoImportante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algunasVeces -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#algunasVeces">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso"/>
+        <rdfs:label>algunasVeces</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#cuarentaYSeisASesenta -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#cuarentaYSeisASesenta">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#dieciochoAVeinticinco -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#dieciochoAVeinticinco">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>dieciochoAVeinticinco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El diseño estadístico se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>disenioEstadistico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#doceADiecisiete -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#doceADiecisiete">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>doceADiecisiete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Nervios</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Pérdida de trabajo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Daño a su imagen profesional, laboral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Daño a su imagen escolar (bullying)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Daño a su imagen personal, excluya imagen laboral y escolar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Otro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">No sabe, no responde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Miedo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Estrés</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Desconfianza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Frustración</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Inseguridad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Enojo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Problemas con familiares, novio, novia, pareja, amigos o amigas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"/>
+        <rdfs:label xml:lang="es">Pérdida de dinero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Cuestionario"/>
+        <rdfs:comment>La instancia hogarEnVivienda representa el número de hogar de una persona encuestada, es un dato que proviene del cuestionario.</rdfs:comment>
+        <rdfs:label>hogarEnVivienda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hombre -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hombre">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora"/>
+        <rdfs:label>hombre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hombreYMujer -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hombreYMujer">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora"/>
+        <rdfs:comment>La instancia hombre y mujer indica que los acosadores son de ambos géneros</rdfs:comment>
+        <rdfs:label>hombreYMujer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Novio, novia o pareja</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">No sabe, no responde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Ex-novio, ex-novia o ex-pareja</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Familiar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Amigo o amiga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Compañero o compañera de clase o de trabajo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Conocido o conocida de poco trato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Conocido o conocida sólo de vista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Desconocido o desconocida</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Otro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#masDeSesenta -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#masDeSesenta">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>masDeSesenta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">Crear o poner contraseñas (claves, huella digital, patrón, etcétera)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">Instalar o actualizar programas antivirus, cortafuegos o antiespías</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">Bloquear ventanas emergentes del navegador</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">Cambiar periódicamente las contraseñas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">No ingresar a sitios web inseguros o páginas desconocidas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:label xml:lang="es">No abrir ni guardar archivos que envían personas desconocidas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:comment xml:lang="es">Se cambió &quot;No publicar mi correo o número telefónico en redes sociales&quot; por &quot;No publicar el correo o número telefónico en redes sociales&quot;</rdfs:comment>
+        <rdfs:label xml:lang="es">No publicar el correo o número telefónico en redes sociales</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"/>
+        <rdfs:comment xml:lang="es">Otra</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Whatsapp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Correo electrónico institucional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Correo electrónico personal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Llamadas de teléfono celular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Llamadas de teléfono fijo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Otro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">No sabe, no responde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Facebook</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Messenger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Instagram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">TikTok</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Telegram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Twitter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:label xml:lang="es">Youtube</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"/>
+        <rdfs:comment>Las siglas SMS corresponden al inglés Short Message Service</rdfs:comment>
+        <rdfs:label xml:lang="es">SMS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#menosDeDoce -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#menosDeDoce">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>menosDeDoce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Enojo o frustración</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">No sabe, no responde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Deseo de venganza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Por diversión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Odio o desprecio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Envidia o celos</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Intimidarle o causarle miedo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Para obtener un beneficio económico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:comment xml:lang="es">Para que la persona encuestada hiciera o dejara de hacer algo (extorsión)</rdfs:comment>
+        <rdfs:label xml:lang="es">Para que hiciera o dejara de hacer algo (extorsión)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"/>
+        <rdfs:label xml:lang="es">Otro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#muchasVeces -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#muchasVeces">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso"/>
+        <rdfs:label>muchasVeces</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#mucho -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#mucho">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos"/>
+        <rdfs:label>mucho</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#mujer -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#mujer">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora"/>
+        <rdfs:label>mujer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#muyImportante -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#muyImportante">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos"/>
+        <rdfs:label>muyImportante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#nada -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#nada">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos"/>
+        <rdfs:label>nada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#nadaImportante -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#nadaImportante">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos"/>
+        <rdfs:label>nadaImportante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#no -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#no">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#CondicionDeUsoDeMedidasDeSeguridad"/>
+        <rdfs:label>no</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#noSabe -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#noSabe">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SexoDeLaPersonaAcosadora"/>
+        <rdfs:label>noSabe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#noSabeNoResponde -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#noSabeNoResponde">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#CondicionDeUsoDeMedidasDeSeguridad"/>
+                    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+                    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso"/>
+                    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos"/>
+                    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:label>noSabeNoResponde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimasHombres -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimasHombres">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia numeroDeVictimasHombres se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>numeroDeVictimasHombres</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimasMujeres -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimasMujeres">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia numeroDeVictimasMujeres se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>numeroDeVictimasMujeres</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimiasDeCiberacoso -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVictimiasDeCiberacoso">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia numeroDeVictimasDeCiberacoso se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>numeroDeVictimasDeCiberacoso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Cuestionario"/>
+        <rdfs:comment>La instancia numeroDeVivienda representa el número de vivienda de la persona encuestada, es un dato que proviene del cuestionario.</rdfs:comment>
+        <rdfs:label>numeroDeVivienda</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>Los valores para la instancia objetivoEspecifico se incluyen en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>objetivoEspecifico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia objetivoGeneral se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>objetivoGeneral</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacionDoceOMasAnios -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacionDoceOMasAnios">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Cuestionario"/>
+        <rdfs:comment>El valor para la instancia poblacionDoceOMasAnios se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>poblacionDoceOMasAnios</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#pocasVeces -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#pocasVeces">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso"/>
+        <rdfs:label>pocasVeces</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poco -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poco">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PercepcionDeProteccionDeDatos"/>
+        <rdfs:label>poco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#pocoImportante -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#pocoImportante">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ImportanciaProteccionDeDatos"/>
+        <rdfs:label>pocoImportante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeDeVictimas -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeDeVictimas">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia porcentajeDeVictimas se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>porcentajeDeVictimas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#si -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#si">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#CondicionDeUsoDeMedidasDeSeguridad"/>
+        <rdfs:label>si</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora le envió mensajes ofensivos, con insultos o burlas</rdfs:comment>
+        <rdfs:label xml:lang="es">Le envió mensajes ofensivos, con insultos o burlas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora publicó, distribuyó, intercambió o vendió imágenes, audios o videos de contenido íntimo sexual, reales o simulados, de la persona encuestada o víctima</rdfs:comment>
+        <rdfs:comment xml:lang="es">La redacción de la situación 10 se modificó, la original es: &quot;Publicó, distribuyó, intercambió o vendió imágenes, audios o videos de contenido íntimo sexual reales o simulados, de usted sin su consentimiento&quot;</rdfs:comment>
+        <rdfs:label xml:lang="es">Publicó, distribuyó, intercambió o vendió imágenes, audios o videos de contenido íntimo sexual, reales o simulados, sin consentimiento de la persona encuestada o víctima</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora publicó información personal, fotos o videos (falsos o verdaderos) de usted para dañarlo o dañarla. Excluya contenido sexual</rdfs:comment>
+        <rdfs:label xml:lang="es">Publicó información personal, fotos o videos (falsos o verdaderos) de usted para dañarlo o dañarla. Excluya contenido sexual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora amenazó con publicar información personal, imágenes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsión)</rdfs:comment>
+        <rdfs:label xml:lang="es">Amenazó con publicar información personal, imágenes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsión)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:label xml:lang="es">Otra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora le hizo llamadas ofensivas, con insultos o burlas</rdfs:comment>
+        <rdfs:label xml:lang="es">Le hizo llamadas ofensivas, con insultos o burlas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora lo o la criticó en línea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social</rdfs:comment>
+        <rdfs:label xml:lang="es">Lo o la criticó en línea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora se hizo pasar por usted para enviar información falsa, insultar o agredir a otras personas</rdfs:comment>
+        <rdfs:label xml:lang="es">Se hizo pasar por usted para enviar información falsa, insultar o agredir a otras personas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora lo o la contactó con nombres falsos para molestarle o dañarle</rdfs:comment>
+        <rdfs:label xml:lang="es">Lo o la contactó con nombres falsos para molestarle o dañarle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora vigiló sus sitios o cuentas en Internet para causarle molestia o daño</rdfs:comment>
+        <rdfs:label xml:lang="es">Vigiló sus sitios o cuentas en Internet para causarle molestia o daño</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora lo o la provocó (molestó o retó) en línea para que reaccionara de forma negativa</rdfs:comment>
+        <rdfs:label xml:lang="es">Lo o la provocó (molestó o retó) en línea para que reaccionara de forma negativa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora le hizo insinuaciones o propuestas de tipo sexual que le molestaron</rdfs:comment>
+        <rdfs:label xml:lang="es">Le hizo insinuaciones o propuestas de tipo sexual que le molestaron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"/>
+        <rdfs:comment xml:lang="es">La persona acosadora le envió fotos o videos de contenido sexual que le molestaron</rdfs:comment>
+        <rdfs:label xml:lang="es">Le envió fotos o videos de contenido sexual que le molestaron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#treintaYSeisACuarentaYCinco -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#treintaYSeisACuarentaYCinco">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>treintaYSeisACuarentaYCinco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#unaVez -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#unaVez">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#FrecuenciaDeCiberacoso"/>
+        <rdfs:label>unaVez</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ReportePrincipalesResultados"/>
+        <rdfs:comment>El valor para la instancia &quot;usuariosDeInternet&quot; se incluye en el reporte &quot;Módulo sobre Ciberacoso MOCIBA 2021: principales resultados&quot;, disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:comment>
+        <rdfs:label>usuariosDeInternet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#veintiseisATreintaYCinco -->
+
+    <owl:NamedIndividual rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#veintiseisATreintaYCinco">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EdadDeLaPersonaAcosadora"/>
+        <rdfs:label>veintiseisATreintaYCinco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.mauxmedina.com/sem/csELD.html -->
+
+    <owl:NamedIndividual rdf:about="https://www.mauxmedina.com/sem/csELD.html">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor"/>
+        <rdfs:comment>Eduardo López Domínguez</rdfs:comment>
+        <rdfs:label>ELD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.mauxmedina.com/sem/csJDLCM.html -->
+
+    <owl:NamedIndividual rdf:about="https://www.mauxmedina.com/sem/csJDLCM.html">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor"/>
+        <rdfs:comment>Jorge de la Calleja Mora</rdfs:comment>
+        <rdfs:label>JDLCM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.mauxmedina.com/sem/csYHV.html -->
+
+    <owl:NamedIndividual rdf:about="https://www.mauxmedina.com/sem/csYHV.html">
+        <rdf:type rdf:resource="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Autor"/>
+        <rdfs:comment>Yesenia Hernández Velázquez</rdfs:comment>
+        <rdfs:label>YHV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021">
+        <rdfs:comment xml:lang="es">MOCIBA 2021: Módulo sobre ciberacoso.  Instituto Nacional de Estadística y Geografía (INEGI).</rdfs:comment>
+        <rdfs:seeAlso xml:lang="es">Módulo sobre Ciberacoso (MOCIBA) 2021. Disponible en: http://inegi.org.mx/programas/mociba/2021</rdfs:seeAlso>
+        <rdfs:comment xml:lang="es">Los datos del Módulo sobre Ciberacoso 2021 (MOCIBA 2021) del Instituto Nacional de Estadística y Geografía (INEGI), se recolectaron a través de un cuestionario formado por 14 preguntas. El levantamiento se llevó a cabo junto con la Encuesta Nacional sobre Disponibilidad y Uso de las Tecnologías de Información y la Comunicación en Hogares (ENDUTIH).</rdfs:comment>
+        <rdfs:label xml:lang="es">MOCIBA 2021</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
