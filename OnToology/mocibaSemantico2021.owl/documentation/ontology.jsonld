@@ -1,0 +1,1803 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "12 a 17 aÃ±os"
+    }, {
+      "@value" : "18 a 25 aÃ±os"
+    }, {
+      "@value" : "26 a 35 aÃ±os"
+    }, {
+      "@value" : "36 a 45 aÃ±os"
+    }, {
+      "@value" : "46 a 60 aÃ±os"
+    }, {
+      "@value" : "menos de 12 aÃ±os"
+    }, {
+      "@value" : "mÃ¡s de 60 aÃ±os"
+    }, {
+      "@value" : "no sabe, no responde"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Algunas veces"
+    }, {
+      "@value" : "Muchas veces"
+    }, {
+      "@value" : "No sabe, no responde"
+    }, {
+      "@value" : "Pocas veces"
+    }, {
+      "@value" : "Una vez"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "No sabe, no responde"
+    }, {
+      "@value" : "no"
+    }, {
+      "@value" : "si"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Algo importante"
+    }, {
+      "@value" : "Muy importante"
+    }, {
+      "@value" : "Nada importante"
+    }, {
+      "@value" : "No sabe, no responde"
+    }, {
+      "@value" : "Poco importante"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Algo"
+    }, {
+      "@value" : "Mucho"
+    }, {
+      "@value" : "Nada"
+    }, {
+      "@value" : "No sabe, no responde"
+    }, {
+      "@value" : "Poco"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "No"
+    }, {
+      "@value" : "No sabe, no responde"
+    }, {
+      "@value" : "Si"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "Hombre"
+    }, {
+      "@value" : "Hombre y mujer"
+    }, {
+      "@value" : "Mujer"
+    }, {
+      "@value" : "No sabe"
+    } ]
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocommons/voaf#Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.mauxmedina.com/sem/csDAD.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.mauxmedina.com/sem/csMAMN.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@id" : "http://www.mauxmedina.com/sem/csDAD.html"
+  }, {
+    "@id" : "https://www.mauxmedina.com/sem/csELD.html"
+  }, {
+    "@id" : "https://www.mauxmedina.com/sem/csJDLCM.html"
+  }, {
+    "@id" : "https://www.mauxmedina.com/sem/csYHV.html"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@id" : "http://www.mauxmedina.com/sem/csMAMN.html"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Un vocabulario para organizar los conceptos del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)"
+  } ],
+  "http://purl.org/dc/elements/1.1/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-09"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@language" : "es",
+    "@value" : "Copyright 2023 colaboraciones semÃ¡nticas "
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "es",
+    "@value" : "Vocabulario de ciberacoso "
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "moci"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021/moci#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "MOCIBA semantico 2021"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  }, {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#"
+  }, {
+    "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"AccionContraElCiberacoso\" estÃ¡ asociada con la pregunta 12 del cuestionario MOCIBA 2021 que a la letra dice: \"12. Â¿QuÃ© acciones tomÃ³ o ha tomado como consecuencia de la(s) situaciÃ³n(es) que viviÃ³(vive)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Las acciones o medidas que ha realizado la persona vÃ­ctima de ciberacoso como consecuencia de la situaciÃ³n o situaciones que vive o viviÃ³ son:\n\n1) Bloquear (a la persona, cuenta o pÃ¡gina)\n2) Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a\n3) Eliminar la publicaciÃ³n, el mensaje o video\n4) Reclamar o confrontar a la persona\n5) Denunciar ante el Ministerio PÃºblico o policÃ­a\n6) Reportar con el proveedor del servicio o plataforma\n7) Informar a una persona (padre, amigos, etcÃ©tera)\n8) Ignorar o no contestar\n9) Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc.)\n10) Denunciar ante las autoridades escolares o laborales\n11) Otra\n12) Ninguna\n13) No sabe o no responde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "AcciÃ³n contra el ciberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El ciberacoso es un acto intencionado, ya sea por parte de un individuo o un grupo, teniendo como fin el daÃ±ar o molestar a una persona mediante el uso de tecnologÃ­as de informaciÃ³n y comunicaciÃ³n (TIC), en especÃ­fico, el internet."
+  }, {
+    "@language" : "es",
+    "@value" : "El ciberacoso puede generar daÃ±os morales, psicolÃ³gicos y econÃ³micos, incluso, provocar ideaciones suicidas en la vÃ­ctima y con ello, crear una forma de victimizaciÃ³n relevante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ciberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "ENDUTIH: Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares."
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"EfectoEnLaVictima\" estÃ¡ asociada con la pregunta 10 del cuestionario MOCIBA 2021 que a la letra dice: \"10. De la tarjeta 3, dÃ­game Â¿quÃ© le provocÃ³ esta situaciÃ³n?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Los efectos en la vÃ­ctima que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\" son: \n1) Nervios\n2) Miedo\n3) EstrÃ©s\n4) Desconfianza\n5) FrustraciÃ³n\n6) Inseguridad\n7) Enojo\n8) Problemas con familiares, novio, pareja, amigos o amigas\n9) PÃ©rdida de dinero\n10) PÃ©rdida de trabajo\n11) DaÃ±o a su imagen profesional / laboral\n12) DaÃ±o a su imagen personal, excluya imagen laboral y escolar\n13) DaÃ±o a su imagen escolar (bullying)\n14) Otro\n15) No sabe o no responde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Efecto en la vÃ­ctima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "INEGI: Instituto Nacional de EstadÃ­stica y GeografÃ­a"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"IdentidadDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 5 del cuestionario MOCIBA 2021 que a la letra dice: \"5. Â¿QuiÃ©nes realizaron la situcaciÃ³n nÃºmero (NÃšMERO DE SITUACIÃ“N EN PREGUNTA 4)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La identidad de la persona acosadora se refiere a la relaciÃ³n que tiene con la vÃ­ctiva. Las identidades pueden ser:\n\n1) Novio, novia o pareja actual\n2) Ex-novio, ex-novia o ex-pareja\n3) Familiar\n4) Amigo o amiga\n5) CompaÃ±ero o compaÃ±era de clase o de trabajo\n6) Conocido o conocida de poco trato\n7) Conocido o conocida solo de vista\n8) Desconocido o desconocida\n9) Otro\n10) No sabe o no responde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Identidad de la persona acosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "MOCIBA: mÃ³dulo sobre ciberacoso."
+  }, {
+    "@language" : "es",
+    "@value" : "MÃ³dulo sobre ciberacoso. Para persona elegida de 12 y mÃ¡s aÃ±os que use internet en cualquier dispositivo."
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico" : [ {
+    "@language" : "es",
+    "@value" : "El diseÃ±o estadÃ­stico de MOCIBA 2021 es:\n\n1) Periodo de referencia de la informaciÃ³n: Agosto de 2020 - Septiembre de 2021.\n2) SelecciÃ³n de la muestra: probabilÃ­stico (polietÃ¡pico, estratificado y por conglomerados)\n3) Forma de captaciÃ³n: entrevista cara a cara aplicada mediante dispositivo electrÃ³nico\n4) PoblaciÃ³n objeto de estudio: poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet en cualquier tipo de dispositivo en los tres meses anteriores al levantamiento\n5) Periodo de captaciÃ³n de informaciÃ³n: 2 de Agosto al 30 de septiembre de 2021\n6) TamaÃ±o de muestra nacional: 65 179 viviendas\n7) Cobertura geogrÃ¡fica: a nivel nacional y por entidad federativa"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso" : [ {
+    "@value" : "17700000"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8000000"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9700000"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico" : [ {
+    "@language" : "es",
+    "@value" : "Conocer el nÃºmero de personas que fueron vÃ­ctimas de alguna situaciÃ³n de ciberacoso."
+  }, {
+    "@language" : "es",
+    "@value" : "Conocer en quÃ© medida la poblaciÃ³n protege sus datos en Internet."
+  }, {
+    "@language" : "es",
+    "@value" : "Conocer la percepciÃ³n de la poblaciÃ³n sobre la importancia de proteger su informaciÃ³n en Internet."
+  }, {
+    "@language" : "es",
+    "@value" : "Conocer las medidas de seguridad adoptadas para protegerse contra el ciberacoso."
+  }, {
+    "@language" : "es",
+    "@value" : "Identificar el tipo de acoso cibernÃ©tico sufrido y, a partir de ello, su caracterizaciÃ³n."
+  }, {
+    "@language" : "es",
+    "@value" : "Identificar las medidas de seguridad que usa la poblaciÃ³n para proteger cuentas y equipos."
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral" : [ {
+    "@language" : "es",
+    "@value" : "Generar informaciÃ³n estadÃ­stica que permita conocer la prevalencia de ciberacoso entre la poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet, asÃ­ como la caracterizaciÃ³n de aquella que viviÃ³ alguna situaciÃ³n de ciberacoso en los Ãºltimos 12 meses, incluyendo la identidad y sexo de la persona acosadora, frecuencia del acoso y consecuencias para la vÃ­ctima."
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021" : [ {
+    "@value" : "104200000"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas" : [ {
+    "@value" : "21.7"
+  } ],
+  "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet" : [ {
+    "@value" : "81171800"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Los datos del MÃ³dulo sobre Ciberacoso 2021 (MOCIBA 2021) del Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI), se recolectaron a travÃ©s de un cuestionario formado por 14 preguntas. El levantamiento se llevÃ³ a cabo junto con la Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares (ENDUTIH)."
+  }, {
+    "@language" : "es",
+    "@value" : "MOCIBA 2021: MÃ³dulo sobre ciberacoso.  Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "MOCIBA 2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MÃ³dulo sobre Ciberacoso (MOCIBA) 2021. Disponible en: http://inegi.org.mx/programas/mociba/2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El objetivo del vocabulario MOCIBA SemÃ¡ntico 2021 es representar los conceptos y las relaciones provenientes del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI) a travÃ©s tecnologÃ­as semÃ¡nticas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "MOCIBA SemÃ¡ntico 2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"MedidaDeSeguridad\" estÃ¡ asociada a la pregunta 2 del cuestionario MOCIBA 2021 que a la letra dice: \"2. Â¿QuÃ© medidas de seguridad realiza\"?."
+  }, {
+    "@language" : "es",
+    "@value" : "Las medidas de seguridad que podrÃ­a realizar la persona encuestada son:\n1) Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)\n2) Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as\n3) Bloquear ventanas emergentes del navegador\n4) Cambiar periÃ³dicamente las contraseÃ±as\n5) No ingresar a sitios web inseguros o pÃ¡ginas desconocidas\n6) No abrir ni guardar archivos que envÃ­an personas desconocidas\n7) No publicar el correo o nÃºmero telefÃ³nico en redes sociales\n8) Otra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medida de seguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"MedioDigital\" estÃ¡ asociada con la pregunta 11 del cuestionario MOCIBA 2021 que a la letra dice: \"11. Â¿QuÃ© medios digitales usÃ³(usaron) la(s) persona(s) para molestarle o daÃ±arle?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Los medios digitales usados por la persona acosadora son:\n1) Whatsapp\n2) Facebook\n3) Messenger\n4) Instagram\n5) TikTok\n6) Telegram\n7) Twitter\n8) Youtube\n9) SMS\n10) Correo electrÃ³nico institucional\n11) Correo electrÃ³nico personal\n12) Llamadas de telÃ©fono celular\n13) Llamadas de telÃ©fono fijo\n14) Otro\n15) No sabe o no responde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medio digital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"MotivacionDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 8 del cuestionario que a la letra dice: \"8. Â¿Por quÃ© cree que lo hizo (RESPUESTA EN PREGUNTA 5)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Los motivos por los que actÃºa una persona acosadora son:\n1) Enojo o frustraciÃ³n\n2) Deseo de venganza\n3) Por diversiÃ³n\n4) Odio o desprecio\n5) Envidia o celos\n6) Intimidarle o causarle miedo\n7) Para obtener un beneficio econÃ³mico\n8) Para que la vÃ­ctima hiciera o dejara de hacer algo\n9) Otro\n10) No sabe o no responde"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "MotivaciÃ³n de la persona acosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Persona que ha realizado al menos alguna de las situaciones descritas en la clase  \"SituaciÃ³n de acoso experimentada\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Persona acosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Persona que contesta el cuestionario del mÃ³dulo MOCIBA, es mayor a 12 aÃ±os y usa internet en cualquier dispositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Persona encuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SMS: servicio de mensaje corto"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Siglas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase \"SituacionDeAcosoExperimentada\" estÃ¡ asociada con las respuestas a la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto de 2020 a la fecha, dÃ­game si por telÃ©fono, celular o Internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Las situaciones de acoso que informa una persona encuestada por parte de una o mÃ¡s personas acosadoras son: \n\n1) Le enviÃ³ mensajes ofensivos, con insultos o burlas\n2) Le hizo llamadas ofensivas, con insultos o burlas\n3) Lo o la criticÃ³ en lÃ­nea por su apariencia (forma de vestir, tono de piel, peso, estatura, etc.) o clase social\n4) Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas\n5) Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle\n6) VigilÃ³ sus sitios o cuentas en internet para causarle molestia o daÃ±o\n7) Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa\n8) Le hizo insinuaciones o propuestas de tipo sexual que le molestaron\n9) Le enviÃ³ fotos o videos de contenido sexual que le molestaron\n10) PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados de usted sin su consentimiento\n11) PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual.\n12) AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)\n13) Otra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SituaciÃ³n de acoso experimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "UPM: Unidad primaria de muestreo."
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Persona que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "VÃ­ctima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bloquear (a la persona, cuenta o pÃ¡gina)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Denunciar ante las autoridades escolares o laborales"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otra"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ninguna"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No sabe, no responde"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Eliminar la publicaciÃ³n, el mensaje o video"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Reclamar o confrontar a la persona"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Denunciar ante el Ministerio PÃºblico o policÃ­a"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Reportar con el proveedor del servicio o plataforma"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Informar a una persona (padres, amigos, etcÃ©tera)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ignorar o no contestar"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una persona acosadora actÃºa por alguno o varios motivos, Ã©stos estÃ¡n representados como elementos de la clase MotivacionPersonaAcosadora."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "actua por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"afectaA\" estÃ¡ asociada con la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, dÃ­game si por telÃ©fono, celular o internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "Una persona acosadora \"afectaA\" una vÃ­ctima. La existencia de esta relaciÃ³n describe en su forma mÃ¡s simple, representa una situaciÃ³n de acoso."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "afecta a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"disenioEstadistico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "disenioEstadistico"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"edadPersonaAcosadora\" estÃ¡ asociada con la pregunta 7 del cuestionario MOCIBA 2021 que a la letra dice: \"7. Aproximadamente, Â¿quÃ© edad tiene(n) esa(s) persona(s)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"edadPersonaAcosadora\" representa la edad de la persona acosadora."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "edadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Nervios"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "PÃ©rdida de trabajo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "DaÃ±o a su imagen profesional, laboral"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "DaÃ±o a su imagen escolar (bullying)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "DaÃ±o a su imagen personal, excluya imagen laboral y escolar"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otro"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No sabe, no responde"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Miedo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "EstrÃ©s"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Desconfianza"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "FrustraciÃ³n"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Inseguridad"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Enojo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Problemas con familiares, novio, novia, pareja, amigos o amigas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "PÃ©rdida de dinero"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"frecuenciaCiberacoso\" estÃ¡ asociada con la pregunta 9 del cuestionario MOCIBA 2021 que a la letra dice: \"9. Esta situaciÃ³n, Â¿ocurriÃ³ ...\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"frecuenciaCiberacoso\" representa la frecuencia de alguna de las situaciones de ciberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "frecuenciaCiberacoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"haRecibidioCorreoBasura_o_virus\" estÃ¡ asociada con la pregunta 3 del cuestionario MOCIBA 2021 que a la letra dice: \"3. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, Â¿ha recibido correo basura (spam) o virus para daÃ±ar sus equipos o informaciÃ³n?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"haRecibidoCorreoBasura_o_virus\" representa si la persona encuestada ha recibido correo basura (spam) o virus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "haRecibidoCorreoBasura_o_virus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"hogarEnVivienda\" representa el nÃºmero de hogar de la persona encuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "hogarEnVivienda"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Novio, novia o pareja"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No sabe, no responde"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ex-novio, ex-novia o ex-pareja"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Familiar"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Amigo o amiga"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "CompaÃ±ero o compaÃ±era de clase o de trabajo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conocido o conocida de poco trato"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Conocido o conocida sÃ³lo de vista"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Desconocido o desconocida"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otro"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Algunas veces, una persona vÃ­ctima identifica a una o mÃ¡s personas acosadoras; las identidades de las personas acosadoras estÃ¡n representadas como elementos de la clase IdentidadPersonaAcosadora."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "identifica a"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"importanciaProteccionDeDatos\" estÃ¡ asociada con la pregunta 13 del cuestionario MOCIBA 2021 que a la letra dice: \"13. Â¿Para usted quÃ© tan importante es cuidar su informaciÃ³n en Internet?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"importanciaProteccionDeDatos\" representa la importancia de la protecciÃ³n de datos que reporta la persona encuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "importanciaProteccionDeDatos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Bloquear ventanas emergentes del navegador"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cambiar periÃ³dicamente las contraseÃ±as"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No ingresar a sitios web inseguros o pÃ¡ginas desconocidas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No abrir ni guardar archivos que envÃ­an personas desconocidas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Se cambiÃ³ \"No publicar mi correo o nÃºmero telefÃ³nico en redes sociales\" por \"No publicar el correo o nÃºmero telefÃ³nico en redes sociales\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No publicar el correo o nÃºmero telefÃ³nico en redes sociales"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Otra"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Whatsapp"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Correo electrÃ³nico institucional"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Correo electrÃ³nico personal"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Llamadas de telÃ©fono celular"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Llamadas de telÃ©fono fijo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otro"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No sabe, no responde"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Facebook"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Messenger"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Instagram"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "TikTok"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Telegram"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Twitter"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Youtube"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "SMS"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Enojo o frustraciÃ³n"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "No sabe, no responde"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Deseo de venganza"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Por diversiÃ³n"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Odio o desprecio"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Envidia o celos"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Intimidarle o causarle miedo"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Para obtener un beneficio econÃ³mico"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Para que la persona encuestada hiciera o dejara de hacer algo (extorsiÃ³n)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Para que hiciera o dejara de hacer algo (extorsiÃ³n)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otro"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"numeroDeVivienda\" representa el nÃºmero de vivienda de la persona encuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "numeroDeVivienda"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"numeroDeVictimasDeCiberacoso\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "numeroDeVictimasDeCiberacoso"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"numeroDeVictimasHombres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "numeroDeVictimasHombres"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"numeroDeVictimasMujeres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "numeroDeVictimasMujeres"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"objetivoEspecifico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "objetivoEspecifico"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"Objetivo general\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "objetivoGeneral"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una persona vÃ­ctima percibe o experimenta situaciones de acoso, Ã©stas estÃ¡n representadas como elementos de la clase SituacionDeAcosoExperimentada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "percibe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"poblacion12oMasAnios\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "poblacion12oMasAnios"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"porcentajeDeVictimas\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "porcentajeDeVictimas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"queTantoImportaProteccionDeDatos\" estÃ¡ asociada con la pregunta 14 del cuestionario MOCIBA 2021 que a la letra dice: \"14. Â¿Y quÃ© tanto considera usted que protege su informaciÃ³n en Internet?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"queTantoImportaProteccionDeDatos\" representa quÃ© tan importante es la protecciÃ³n de datos segÃºn la percepciÃ³n de la persona encuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "queTantoImportaProteccionDeDatos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"realizaMedidaDeSeguridad\" estÃ¡ asociada con la pregunta 1 del cuestionario MOCIBA 2021, que a la letra dice: \"1. Â¿Usted realiza alguna medida de seguridad para proteger su computadora, tablet, celular o cuentas de internet?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"realizaMedidaDeSeguridad\" representa si la persona encuestada realiza o no una medida de seguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "realizaMedidaDeSeguridad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid32"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"sexoPersonaAcosadora\" estÃ¡ asociada con la pregunta 6 del cuestionario MOCIBA 2021 que a la letra dice: \"6. Esta(s) persona(s), es(son) hombre(s) o mujer(es)?\"."
+  }, {
+    "@language" : "es",
+    "@value" : "La propiedad \"sexoPersonaAcosadora\" representa el sexo de la persona acosadora."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "sexoPersonaAcosadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora le enviÃ³ mensajes ofensivos, con insultos o burlas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Le enviÃ³ mensajes ofensivos, con insultos o burlas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora publicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, de la persona encuestada o vÃ­ctima"
+  }, {
+    "@language" : "es",
+    "@value" : "La redacciÃ³n de la situaciÃ³n 10 se modificÃ³, la original es: \"PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados, de usted sin su consentimiento\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, sin consentimiento de la persona encuestada o vÃ­ctima"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora publicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora amenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Otra"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora le hizo llamadas ofensivas, con insultos o burlas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Le hizo llamadas ofensivas, con insultos o burlas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora vigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "VigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora le hizo insinuaciones o propuestas de tipo sexual que le molestaron"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Le hizo insinuaciones o propuestas de tipo sexual que le molestaron"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La persona acosadora le enviÃ³ fotos o videos de contenido sexual que le molestaron"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Le enviÃ³ fotos o videos de contenido sexual que le molestaron"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una persona encuestada o una persona acosadora utiliza medios digitales, Ã©stos estÃ¡n representados como elementos de la clase MedioDigital."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "usa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+  } ]
+}, {
+  "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad \"usuariosDeInternet\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Usuarios de internet"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Persona"
+  } ]
+}, {
+  "@id" : "https://www.mauxmedina.com/sem/csELD.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.mauxmedina.com/sem/csJDLCM.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.mauxmedina.com/sem/csYHV.html",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

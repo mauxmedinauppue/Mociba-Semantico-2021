@@ -1,0 +1,168 @@
+{
+  "@context" : {
+    "IdentidadPersonaAcosadora" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora"
+    },
+    "objetivoGeneral" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral"
+    },
+    "MOCIBA_Semantico_2021" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "AccionContraElCiberacoso" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "haRecibidoCorreoBasura_o_virus" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus"
+    },
+    "numeroVictimasCiberacoso" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso"
+    },
+    "edadPersonaAcosadora" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora"
+    },
+    "hogarEnVivienda" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda"
+    },
+    "Victima" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "frecuenciaCiberacoso" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso"
+    },
+    "afectaA" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA",
+      "@type" : "@id"
+    },
+    "Ciberacoso" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso"
+    },
+    "PersonaAcosadora" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "SituacionDeAcosoExperimentada" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada"
+    },
+    "percibe" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe",
+      "@type" : "@id"
+    },
+    "numeroVictimasHombres" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres"
+    },
+    "usuariosDeInternet" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "usa" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa",
+      "@type" : "@id"
+    },
+    "poblacion12oMas2021" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021"
+    },
+    "Siglas" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "numeroVictimasMujeres" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres"
+    },
+    "PersonaEncuestada" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada"
+    },
+    "AcosoCibernetico" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "objetivoEspecifico" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico"
+    },
+    "identificaA" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA",
+      "@type" : "@id"
+    },
+    "sexoPersonaAcosadora" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "queTantoImportaProteccionDeDatos" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "MotivacionPersonaAcosadora" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/elements/1.1/modified"
+    },
+    "actuaPor" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor",
+      "@type" : "@id"
+    },
+    "EfectoEnLaVictima" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "MedioDigital" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital"
+    },
+    "disenioEstadistico" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico"
+    },
+    "MOCIBA2021" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "porcentajeVictimas" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "realizaMedidaDeSeguridad" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad"
+    },
+    "MedidaDeSeguridad" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad"
+    },
+    "importanciaProteccionDeDatos" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "numeroDeVivienda" : {
+      "@id" : "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda"
+    }
+  }
+}
