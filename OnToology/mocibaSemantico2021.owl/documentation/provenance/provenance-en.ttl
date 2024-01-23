@@ -1,0 +1,18 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Vocabulario de ciberacoso ";
+	 prov:wasAttributedTo <http://www.mauxmedina.com/sem/csMAMN.html>;
+	 dc:creator <http://www.mauxmedina.com/sem/csMAMN.html>;
+	 prov:wasAttributedTo <http://www.mauxmedina.com/sem/csDAD.html>;
+	 dc:contributor <http://www.mauxmedina.com/sem/csDAD.html>;
+	 prov:wasAttributedTo <https://www.mauxmedina.com/sem/csELD.html>;
+	 dc:contributor <https://www.mauxmedina.com/sem/csELD.html>;
+	 prov:wasAttributedTo <https://www.mauxmedina.com/sem/csJDLCM.html>;
+	 dc:contributor <https://www.mauxmedina.com/sem/csJDLCM.html>;
+	 prov:wasAttributedTo <https://www.mauxmedina.com/sem/csYHV.html>;
+	 dc:contributor <https://www.mauxmedina.com/sem/csYHV.html>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

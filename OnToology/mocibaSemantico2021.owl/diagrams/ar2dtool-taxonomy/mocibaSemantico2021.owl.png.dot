@@ -1,0 +1,69 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "mocibaSemantico2021:PersonaEncuestada" "mocibaSemantico2021:AcosoCibernetico" "mocibaSemantico2021:AccionContraElCiberacoso" "mocibaSemantico2021:MOCIBA_Semantico_2021" "mocibaSemantico2021:MedioDigital" "mocibaSemantico2021:PersonaAcosadora" "mocibaSemantico2021:MotivacionPersonaAcosadora" "mocibaSemantico2021:Victima" "foaf:Person" "mocibaSemantico2021:IdentidadPersonaAcosadora" "mocibaSemantico2021:SituacionDeAcosoExperimentada" "mocibaSemantico2021:EfectoEnLaVictima" "mocibaSemantico2021:MOCIBA2021" "mocibaSemantico2021:Ciberacoso" "mocibaSemantico2021:MedidaDeSeguridad" "owl:Thing" "owl:Nothing" ; /*classes style*/
+node [shape = rectangle, color="black"]; "The subject is a subclass of a class." "subClassOf" ; /*literals style*/
+node [shape = null, color="null"]; "rdfs:subClassOf" ; /*object properties style*/
+	"owl:DatatypeProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"owl:DeprecatedProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"owl:AnnotationProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"owl:ObjectProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:PersonaEncuestada" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"owl:Ontology" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:AllDisjointProperties" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"rdf:Alt" -> "rdfs:Container" [ label = "rdfs:subClassOf" ];
+	"owl:Class" -> "rdfs:Class" [ label = "rdfs:subClassOf" ];
+	"rdf:List" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:DeprecatedClass" -> "rdfs:Class" [ label = "rdfs:subClassOf" ];
+	"rdf:Statement" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"rdf:langString" -> "rdfs:Literal" [ label = "rdfs:subClassOf" ];
+	"rdf:Seq" -> "rdfs:Container" [ label = "rdfs:subClassOf" ];
+	"owl:FunctionalProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"owl:SymmetricProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"owl:NamedIndividual" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"rdfs:ContainerMembershipProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"rdf:Property" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:SituacionDeAcosoExperimentada" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"rdf:XMLLiteral" -> "rdfs:Literal" [ label = "rdfs:subClassOf" ];
+	"rdf:CompoundLiteral" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:DataRange" -> "rdfs:Datatype" [ label = "rdfs:subClassOf" ];
+	"owl:Nothing" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"owl:InverseFunctionalProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"rdfs:Container" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"rdf:HTML" -> "rdfs:Literal" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:MotivacionPersonaAcosadora" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"owl:NegativePropertyAssertion" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:AllDifferent" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:IrreflexiveProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"rdf:Bag" -> "rdfs:Container" [ label = "rdfs:subClassOf" ];
+	"owl:AsymmetricProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"owl:Annotation" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:Axiom" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"owl:OntologyProperty" -> "rdf:Property" [ label = "rdfs:subClassOf" ];
+	"owl:ReflexiveProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"owl:AllDisjointClasses" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:PersonaAcosadora" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"rdfs:subClassOf" -> "rdfs:Class" [ label = "rdfs:domain" ];
+	"rdfs:subClassOf" -> "rdfs:Class" [ label = "rdfs:range" ];
+	"rdfs:subClassOf" -> "The subject is a subclass of a class." [ label = "rdfs:comment" ];
+	"rdfs:subClassOf" -> "subClassOf" [ label = "rdfs:label" ];
+	"rdfs:subClassOf" -> "rdfs:" [ label = "rdfs:isDefinedBy" ];
+	"rdfs:subClassOf" -> "rdf:Property" [ label = "rdf:type" ];
+	"mocibaSemantico2021:Victima" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:MedioDigital" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"owl:TransitiveProperty" -> "owl:ObjectProperty" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:IdentidadPersonaAcosadora" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"rdfs:Class" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"rdfs:Datatype" -> "rdfs:Class" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:MedidaDeSeguridad" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"rdf:PlainLiteral" -> "rdfs:Literal" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:Ciberacoso" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:AcosoCibernetico" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:EfectoEnLaVictima" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"rdfs:Literal" -> "rdfs:Resource" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:MOCIBA2021" -> "mocibaSemantico2021:MOCIBA_Semantico_2021" [ label = "rdfs:subClassOf" ];
+	"mocibaSemantico2021:AccionContraElCiberacoso" -> "mocibaSemantico2021:MOCIBA2021" [ label = "rdfs:subClassOf" ];
+	"owl:Restriction" -> "owl:Class" [ label = "rdfs:subClassOf" ];
+	"rdf:JSON" -> "rdfs:Literal" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,1174 @@
+@prefix : <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#> .
+
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> rdf:type owl:Ontology ;
+                                                                  owl:imports rdf: ,
+                                                                              rdfs: ,
+                                                                              owl: ,
+                                                                              <http://www.w3.org/2003/06/sw-vocab-status/ns#> ;
+                                                                  <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                                                  <http://purl.org/dc/elements/1.1/contributor> <http://www.mauxmedina.com/sem/csDAD.html> ,
+                                                                                                                <https://www.mauxmedina.com/sem/csELD.html> ,
+                                                                                                                <https://www.mauxmedina.com/sem/csJDLCM.html> ,
+                                                                                                                <https://www.mauxmedina.com/sem/csYHV.html> ;
+                                                                  <http://purl.org/dc/elements/1.1/creator> <http://www.mauxmedina.com/sem/csMAMN.html> ;
+                                                                  <http://purl.org/dc/elements/1.1/description> "Un vocabulario para organizar los conceptos del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)"@en ;
+                                                                  <http://purl.org/dc/elements/1.1/modified> "2023-01-09"^^xsd:date ;
+                                                                  <http://purl.org/dc/elements/1.1/rights> "Copyright 2023 colaboraciones semÃ¡nticas "@es ;
+                                                                  <http://purl.org/dc/elements/1.1/title> "Vocabulario de ciberacoso "@es ;
+                                                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "moci" ;
+                                                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021/moci#" ;
+                                                                  rdfs:comment ""@en ;
+                                                                  rdfs:label "MOCIBA semantico 2021"@es ;
+                                                                  owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor
+:actuaPor rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :PersonaAcosadora ;
+          rdfs:range :MotivacionPersonaAcosadora ;
+          rdfs:comment "Una persona acosadora actÃºa por alguno o varios motivos, Ã©stos estÃ¡n representados como elementos de la clase MotivacionPersonaAcosadora."@es ;
+          rdfs:label "actua por"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA
+:afectaA rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :PersonaAcosadora ;
+         rdfs:range :Victima ;
+         rdfs:comment "La propiedad \"afectaA\" estÃ¡ asociada con la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, dÃ­game si por telÃ©fono, celular o internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."@es ,
+                      "Una persona acosadora \"afectaA\" una vÃ­ctima. La existencia de esta relaciÃ³n describe en su forma mÃ¡s simple, representa una situaciÃ³n de acoso."@es ;
+         rdfs:label "afecta a"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA
+:identificaA rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Victima ;
+             rdfs:range :IdentidadPersonaAcosadora ;
+             rdfs:comment "Algunas veces, una persona vÃ­ctima identifica a una o mÃ¡s personas acosadoras; las identidades de las personas acosadoras estÃ¡n representadas como elementos de la clase IdentidadPersonaAcosadora."@es ;
+             rdfs:label "identifica a"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe
+:percibe rdf:type owl:ObjectProperty ,
+                  owl:AsymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Victima ;
+         rdfs:range :SituacionDeAcosoExperimentada ;
+         rdfs:comment "Una persona vÃ­ctima percibe o experimenta situaciones de acoso, Ã©stas estÃ¡n representadas como elementos de la clase SituacionDeAcosoExperimentada."@es ;
+         rdfs:label "percibe"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa
+:usa rdf:type owl:ObjectProperty ,
+              owl:AsymmetricProperty ,
+              owl:IrreflexiveProperty ;
+     rdfs:range :MedioDigital ;
+     rdfs:comment "Una persona encuestada o una persona acosadora utiliza medios digitales, Ã©stos estÃ¡n representados como elementos de la clase MedioDigital."@es ;
+     rdfs:label "usa"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico
+:disenioEstadistico rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :MOCIBA2021 ;
+                    rdfs:comment "La propiedad \"disenioEstadistico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                    rdfs:label "disenioEstadistico"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora
+:edadPersonaAcosadora rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PersonaAcosadora ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "12 a 17 aÃ±os" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "18 a 25 aÃ±os" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "26 a 35 aÃ±os" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "36 a 45 aÃ±os" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "46 a 60 aÃ±os" ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "menos de 12 aÃ±os" ;
+                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                 rdf:first "mÃ¡s de 60 aÃ±os" ;
+                                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                                            rdf:first "no sabe, no responde" ;
+                                                                                                                            rdf:rest rdf:nil
+                                                                                                                          ]
+                                                                                                               ]
+                                                                                                    ]
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:comment "La propiedad \"edadPersonaAcosadora\" estÃ¡ asociada con la pregunta 7 del cuestionario MOCIBA 2021 que a la letra dice: \"7. Aproximadamente, Â¿quÃ© edad tiene(n) esa(s) persona(s)?\"."@es ,
+                                   "La propiedad \"edadPersonaAcosadora\" representa la edad de la persona acosadora."@es ;
+                      rdfs:label "edadPersonaAcosadora"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso
+:frecuenciaCiberacoso rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :SituacionDeAcosoExperimentada ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "Algunas veces" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "Muchas veces" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "No sabe, no responde" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "Pocas veces" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "Una vez" ;
+                                                                                           rdf:rest rdf:nil
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:comment "La propiedad \"frecuenciaCiberacoso\" estÃ¡ asociada con la pregunta 9 del cuestionario MOCIBA 2021 que a la letra dice: \"9. Esta situaciÃ³n, Â¿ocurriÃ³ ...\"."@es ,
+                                   "La propiedad \"frecuenciaCiberacoso\" representa la frecuencia de alguna de las situaciones de ciberacoso"@es ;
+                      rdfs:label "frecuenciaCiberacoso"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus
+:haRecibidoCorreoBasura_o_virus rdf:type owl:DatatypeProperty ;
+                                rdfs:domain :PersonaEncuestada ;
+                                rdfs:range [ rdf:type rdfs:Datatype ;
+                                             owl:oneOf [ rdf:type rdf:List ;
+                                                         rdf:first "No sabe, no responde" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "no" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "si" ;
+                                                                               rdf:rest rdf:nil
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                           ] ;
+                                rdfs:comment "La propiedad \"haRecibidioCorreoBasura_o_virus\" estÃ¡ asociada con la pregunta 3 del cuestionario MOCIBA 2021 que a la letra dice: \"3. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, Â¿ha recibido correo basura (spam) o virus para daÃ±ar sus equipos o informaciÃ³n?\"."@es ,
+                                             "La propiedad \"haRecibidoCorreoBasura_o_virus\" representa si la persona encuestada ha recibido correo basura (spam) o virus"@es ;
+                                rdfs:label "haRecibidoCorreoBasura_o_virus"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda
+:hogarEnVivienda rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :PersonaEncuestada ;
+                 rdfs:comment "La propiedad \"hogarEnVivienda\" representa el nÃºmero de hogar de la persona encuestada"@es ;
+                 rdfs:label "hogarEnVivienda"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos
+:importanciaProteccionDeDatos rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :PersonaEncuestada ;
+                              rdfs:range [ rdf:type rdfs:Datatype ;
+                                           owl:oneOf [ rdf:type rdf:List ;
+                                                       rdf:first "Algo importante" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "Muy importante" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Nada importante" ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first "No sabe, no responde" ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first "Poco importante" ;
+                                                                                                   rdf:rest rdf:nil
+                                                                                                 ]
+                                                                                      ]
+                                                                           ]
+                                                                ]
+                                                     ]
+                                         ] ;
+                              rdfs:comment "La propiedad \"importanciaProteccionDeDatos\" estÃ¡ asociada con la pregunta 13 del cuestionario MOCIBA 2021 que a la letra dice: \"13. Â¿Para usted quÃ© tan importante es cuidar su informaciÃ³n en Internet?\"."@es ,
+                                           "La propiedad \"importanciaProteccionDeDatos\" representa la importancia de la protecciÃ³n de datos que reporta la persona encuestada"@es ;
+                              rdfs:label "importanciaProteccionDeDatos"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda
+:numeroDeVivienda rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :PersonaEncuestada ;
+                  rdfs:comment "La propiedad \"numeroDeVivienda\" representa el nÃºmero de vivienda de la persona encuestada"@es ;
+                  rdfs:label "numeroDeVivienda"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso
+:numeroVictimasCiberacoso rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :MOCIBA2021 ;
+                          rdfs:comment "La propiedad \"numeroDeVictimasDeCiberacoso\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                          rdfs:label "numeroDeVictimasDeCiberacoso"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres
+:numeroVictimasHombres rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :MOCIBA2021 ;
+                       rdfs:comment "La propiedad \"numeroDeVictimasHombres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                       rdfs:label "numeroDeVictimasHombres"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres
+:numeroVictimasMujeres rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :MOCIBA2021 ;
+                       rdfs:comment "La propiedad \"numeroDeVictimasMujeres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                       rdfs:label "numeroDeVictimasMujeres"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico
+:objetivoEspecifico rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "La propiedad \"objetivoEspecifico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                    rdfs:label "objetivoEspecifico"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral
+:objetivoGeneral rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:comment "La propiedad \"Objetivo general\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                 rdfs:label "objetivoGeneral"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021
+:poblacion12oMas2021 rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:domain :MOCIBA2021 ;
+                     rdfs:comment "La propiedad \"poblacion12oMasAnios\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                     rdfs:label "poblacion12oMasAnios"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas
+:porcentajeVictimas rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :MOCIBA2021 ;
+                    rdfs:comment "La propiedad \"porcentajeDeVictimas\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                    rdfs:label "porcentajeDeVictimas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos
+:queTantoImportaProteccionDeDatos rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :PersonaEncuestada ;
+                                  rdfs:range [ rdf:type rdfs:Datatype ;
+                                               owl:oneOf [ rdf:type rdf:List ;
+                                                           rdf:first "Algo" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "Mucho" ;
+                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                 rdf:first "Nada" ;
+                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                            rdf:first "No sabe, no responde" ;
+                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                       rdf:first "Poco" ;
+                                                                                                       rdf:rest rdf:nil
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                             ] ;
+                                  rdfs:comment "La propiedad \"queTantoImportaProteccionDeDatos\" estÃ¡ asociada con la pregunta 14 del cuestionario MOCIBA 2021 que a la letra dice: \"14. Â¿Y quÃ© tanto considera usted que protege su informaciÃ³n en Internet?\"."@es ,
+                                               "La propiedad \"queTantoImportaProteccionDeDatos\" representa quÃ© tan importante es la protecciÃ³n de datos segÃºn la percepciÃ³n de la persona encuestada"@es ;
+                                  rdfs:label "queTantoImportaProteccionDeDatos"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad
+:realizaMedidaDeSeguridad rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :PersonaEncuestada ;
+                          rdfs:range [ rdf:type rdfs:Datatype ;
+                                       owl:oneOf [ rdf:type rdf:List ;
+                                                   rdf:first "No" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "No sabe, no responde" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "Si" ;
+                                                                         rdf:rest rdf:nil
+                                                                       ]
+                                                            ]
+                                                 ]
+                                     ] ;
+                          rdfs:comment "La propiedad \"realizaMedidaDeSeguridad\" estÃ¡ asociada con la pregunta 1 del cuestionario MOCIBA 2021, que a la letra dice: \"1. Â¿Usted realiza alguna medida de seguridad para proteger su computadora, tablet, celular o cuentas de internet?\"."@es ,
+                                       "La propiedad \"realizaMedidaDeSeguridad\" representa si la persona encuestada realiza o no una medida de seguridad"@es ;
+                          rdfs:label "realizaMedidaDeSeguridad"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora
+:sexoPersonaAcosadora rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :PersonaAcosadora ;
+                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                   owl:oneOf [ rdf:type rdf:List ;
+                                               rdf:first "Hombre" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "Hombre y mujer" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "Mujer" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "No sabe" ;
+                                                                                rdf:rest rdf:nil
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                 ] ;
+                      rdfs:comment "La propiedad \"sexoPersonaAcosadora\" estÃ¡ asociada con la pregunta 6 del cuestionario MOCIBA 2021 que a la letra dice: \"6. Esta(s) persona(s), es(son) hombre(s) o mujer(es)?\"."@es ,
+                                   "La propiedad \"sexoPersonaAcosadora\" representa el sexo de la persona acosadora."@es ;
+                      rdfs:label "sexoPersonaAcosadora"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet
+:usuariosDeInternet rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :MOCIBA2021 ;
+                    rdfs:comment "La propiedad \"usuariosDeInternet\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es ;
+                    rdfs:label "Usuarios de internet"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso
+:AccionContraElCiberacoso rdf:type owl:Class ;
+                          rdfs:subClassOf :MOCIBA2021 ;
+                          rdfs:comment "La clase \"AccionContraElCiberacoso\" estÃ¡ asociada con la pregunta 12 del cuestionario MOCIBA 2021 que a la letra dice: \"12. Â¿QuÃ© acciones tomÃ³ o ha tomado como consecuencia de la(s) situaciÃ³n(es) que viviÃ³(vive)?\"."@es ,
+                                       """Las acciones o medidas que ha realizado la persona vÃ­ctima de ciberacoso como consecuencia de la situaciÃ³n o situaciones que vive o viviÃ³ son:
+
+1) Bloquear (a la persona, cuenta o pÃ¡gina)
+2) Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a
+3) Eliminar la publicaciÃ³n, el mensaje o video
+4) Reclamar o confrontar a la persona
+5) Denunciar ante el Ministerio PÃºblico o policÃ­a
+6) Reportar con el proveedor del servicio o plataforma
+7) Informar a una persona (padre, amigos, etcÃ©tera)
+8) Ignorar o no contestar
+9) Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc.)
+10) Denunciar ante las autoridades escolares o laborales
+11) Otra
+12) Ninguna
+13) No sabe o no responde"""@es ;
+                          rdfs:label "AcciÃ³n contra el ciberacoso"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico
+:AcosoCibernetico rdf:type owl:Class ;
+                  owl:equivalentClass :Ciberacoso ;
+                  rdfs:subClassOf :MOCIBA2021 .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso
+:Ciberacoso rdf:type owl:Class ;
+            rdfs:subClassOf :MOCIBA2021 ;
+            rdfs:comment "El ciberacoso es un acto intencionado, ya sea por parte de un individuo o un grupo, teniendo como fin el daÃ±ar o molestar a una persona mediante el uso de tecnologÃ­as de informaciÃ³n y comunicaciÃ³n (TIC), en especÃ­fico, el internet."@es ,
+                         "El ciberacoso puede generar daÃ±os morales, psicolÃ³gicos y econÃ³micos, incluso, provocar ideaciones suicidas en la vÃ­ctima y con ello, crear una forma de victimizaciÃ³n relevante."@es ;
+            rdfs:label "Ciberacoso" .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima
+:EfectoEnLaVictima rdf:type owl:Class ;
+                   rdfs:subClassOf :MOCIBA2021 ;
+                   rdfs:comment "La clase \"EfectoEnLaVictima\" estÃ¡ asociada con la pregunta 10 del cuestionario MOCIBA 2021 que a la letra dice: \"10. De la tarjeta 3, dÃ­game Â¿quÃ© le provocÃ³ esta situaciÃ³n?\"."@es ,
+                                """Los efectos en la vÃ­ctima que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\" son: 
+1) Nervios
+2) Miedo
+3) EstrÃ©s
+4) Desconfianza
+5) FrustraciÃ³n
+6) Inseguridad
+7) Enojo
+8) Problemas con familiares, novio, pareja, amigos o amigas
+9) PÃ©rdida de dinero
+10) PÃ©rdida de trabajo
+11) DaÃ±o a su imagen profesional / laboral
+12) DaÃ±o a su imagen personal, excluya imagen laboral y escolar
+13) DaÃ±o a su imagen escolar (bullying)
+14) Otro
+15) No sabe o no responde"""@es ;
+                   rdfs:label "Efecto en la vÃ­ctima"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora
+:IdentidadPersonaAcosadora rdf:type owl:Class ;
+                           rdfs:subClassOf :MOCIBA2021 ;
+                           rdfs:comment "La clase \"IdentidadDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 5 del cuestionario MOCIBA 2021 que a la letra dice: \"5. Â¿QuiÃ©nes realizaron la situcaciÃ³n nÃºmero (NÃšMERO DE SITUACIÃ“N EN PREGUNTA 4)?\"."@es ,
+                                        """La identidad de la persona acosadora se refiere a la relaciÃ³n que tiene con la vÃ­ctiva. Las identidades pueden ser:
+
+1) Novio, novia o pareja actual
+2) Ex-novio, ex-novia o ex-pareja
+3) Familiar
+4) Amigo o amiga
+5) CompaÃ±ero o compaÃ±era de clase o de trabajo
+6) Conocido o conocida de poco trato
+7) Conocido o conocida solo de vista
+8) Desconocido o desconocida
+9) Otro
+10) No sabe o no responde"""@es ;
+                           rdfs:label "Identidad de la persona acosadora"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021
+:MOCIBA2021 rdf:type owl:Class ;
+            rdfs:subClassOf :MOCIBA_Semantico_2021 .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021
+:MOCIBA_Semantico_2021 rdf:type owl:Class ;
+                       rdfs:comment "El objetivo del vocabulario MOCIBA SemÃ¡ntico 2021 es representar los conceptos y las relaciones provenientes del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI) a travÃ©s tecnologÃ­as semÃ¡nticas."@es ;
+                       rdfs:label "MOCIBA SemÃ¡ntico 2021"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad
+:MedidaDeSeguridad rdf:type owl:Class ;
+                   rdfs:subClassOf :MOCIBA2021 ;
+                   rdfs:comment "La clase \"MedidaDeSeguridad\" estÃ¡ asociada a la pregunta 2 del cuestionario MOCIBA 2021 que a la letra dice: \"2. Â¿QuÃ© medidas de seguridad realiza\"?."@es ,
+                                """Las medidas de seguridad que podrÃ­a realizar la persona encuestada son:
+1) Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)
+2) Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as
+3) Bloquear ventanas emergentes del navegador
+4) Cambiar periÃ³dicamente las contraseÃ±as
+5) No ingresar a sitios web inseguros o pÃ¡ginas desconocidas
+6) No abrir ni guardar archivos que envÃ­an personas desconocidas
+7) No publicar el correo o nÃºmero telefÃ³nico en redes sociales
+8) Otra"""@es ;
+                   rdfs:label "Medida de seguridad"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital
+:MedioDigital rdf:type owl:Class ;
+              rdfs:subClassOf :MOCIBA2021 ;
+              rdfs:comment "La clase \"MedioDigital\" estÃ¡ asociada con la pregunta 11 del cuestionario MOCIBA 2021 que a la letra dice: \"11. Â¿QuÃ© medios digitales usÃ³(usaron) la(s) persona(s) para molestarle o daÃ±arle?\"."@es ,
+                           """Los medios digitales usados por la persona acosadora son:
+1) Whatsapp
+2) Facebook
+3) Messenger
+4) Instagram
+5) TikTok
+6) Telegram
+7) Twitter
+8) Youtube
+9) SMS
+10) Correo electrÃ³nico institucional
+11) Correo electrÃ³nico personal
+12) Llamadas de telÃ©fono celular
+13) Llamadas de telÃ©fono fijo
+14) Otro
+15) No sabe o no responde"""@es ;
+              rdfs:label "Medio digital"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora
+:MotivacionPersonaAcosadora rdf:type owl:Class ;
+                            rdfs:subClassOf :MOCIBA2021 ;
+                            rdfs:comment "La clase \"MotivacionDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 8 del cuestionario que a la letra dice: \"8. Â¿Por quÃ© cree que lo hizo (RESPUESTA EN PREGUNTA 5)?\"."@es ,
+                                         """Los motivos por los que actÃºa una persona acosadora son:
+1) Enojo o frustraciÃ³n
+2) Deseo de venganza
+3) Por diversiÃ³n
+4) Odio o desprecio
+5) Envidia o celos
+6) Intimidarle o causarle miedo
+7) Para obtener un beneficio econÃ³mico
+8) Para que la vÃ­ctima hiciera o dejara de hacer algo
+9) Otro
+10) No sabe o no responde"""@es ;
+                            rdfs:label "MotivaciÃ³n de la persona acosadora"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora
+:PersonaAcosadora rdf:type owl:Class ;
+                  rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                  rdfs:comment "Persona que ha realizado al menos alguna de las situaciones descritas en la clase  \"SituaciÃ³n de acoso experimentada\""@es ;
+                  rdfs:label "Persona acosadora"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada
+:PersonaEncuestada rdf:type owl:Class ;
+                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+                   rdfs:comment "Persona que contesta el cuestionario del mÃ³dulo MOCIBA, es mayor a 12 aÃ±os y usa internet en cualquier dispositivo."@es ;
+                   rdfs:label "Persona encuestada"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas
+:Siglas rdf:type owl:Class ;
+        rdfs:label "Siglas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada
+:SituacionDeAcosoExperimentada rdf:type owl:Class ;
+                               rdfs:subClassOf :MOCIBA2021 ;
+                               rdfs:comment "La clase \"SituacionDeAcosoExperimentada\" estÃ¡ asociada con las respuestas a la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto de 2020 a la fecha, dÃ­game si por telÃ©fono, celular o Internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."@es ,
+                                            """Las situaciones de acoso que informa una persona encuestada por parte de una o mÃ¡s personas acosadoras son: 
+
+1) Le enviÃ³ mensajes ofensivos, con insultos o burlas
+2) Le hizo llamadas ofensivas, con insultos o burlas
+3) Lo o la criticÃ³ en lÃ­nea por su apariencia (forma de vestir, tono de piel, peso, estatura, etc.) o clase social
+4) Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas
+5) Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle
+6) VigilÃ³ sus sitios o cuentas en internet para causarle molestia o daÃ±o
+7) Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa
+8) Le hizo insinuaciones o propuestas de tipo sexual que le molestaron
+9) Le enviÃ³ fotos o videos de contenido sexual que le molestaron
+10) PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados de usted sin su consentimiento
+11) PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual.
+12) AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)
+13) Otra"""@es ;
+                               rdfs:label "SituaciÃ³n de acoso experimentada"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima
+:Victima rdf:type owl:Class ;
+         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+         rdfs:comment "Persona que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\""@es ;
+         rdfs:label "VÃ­ctima"@es .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:label "Persona" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.mauxmedina.com/sem/csDAD.html
+<http://www.mauxmedina.com/sem/csDAD.html> rdf:type owl:NamedIndividual .
+
+
+###  http://www.mauxmedina.com/sem/csMAMN.html
+<http://www.mauxmedina.com/sem/csMAMN.html> rdf:type owl:NamedIndividual .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH
+:ENDUTIH rdf:type owl:NamedIndividual ,
+                  :Siglas ;
+         rdfs:label "ENDUTIH: Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares."@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI
+:INEGI rdf:type owl:NamedIndividual ,
+                :Siglas ;
+       rdfs:label "INEGI: Instituto Nacional de EstadÃ­stica y GeografÃ­a"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA
+:MOCIBA rdf:type owl:NamedIndividual ,
+                 :Siglas ;
+        rdfs:label "MOCIBA: mÃ³dulo sobre ciberacoso."@es ,
+                   "MÃ³dulo sobre ciberacoso. Para persona elegida de 12 y mÃ¡s aÃ±os que use internet en cualquier dispositivo."@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021
+:MOCIBA2021 rdf:type owl:NamedIndividual ,
+                     :MOCIBA2021 ;
+            :disenioEstadistico """El diseÃ±o estadÃ­stico de MOCIBA 2021 es:
+
+1) Periodo de referencia de la informaciÃ³n: Agosto de 2020 - Septiembre de 2021.
+2) SelecciÃ³n de la muestra: probabilÃ­stico (polietÃ¡pico, estratificado y por conglomerados)
+3) Forma de captaciÃ³n: entrevista cara a cara aplicada mediante dispositivo electrÃ³nico
+4) PoblaciÃ³n objeto de estudio: poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet en cualquier tipo de dispositivo en los tres meses anteriores al levantamiento
+5) Periodo de captaciÃ³n de informaciÃ³n: 2 de Agosto al 30 de septiembre de 2021
+6) TamaÃ±o de muestra nacional: 65 179 viviendas
+7) Cobertura geogrÃ¡fica: a nivel nacional y por entidad federativa"""@es ;
+            :numeroVictimasCiberacoso "17700000" ;
+            :numeroVictimasHombres 8000000 ;
+            :numeroVictimasMujeres 9700000 ;
+            :objetivoEspecifico "Conocer el nÃºmero de personas que fueron vÃ­ctimas de alguna situaciÃ³n de ciberacoso."@es ,
+                                "Conocer en quÃ© medida la poblaciÃ³n protege sus datos en Internet."@es ,
+                                "Conocer la percepciÃ³n de la poblaciÃ³n sobre la importancia de proteger su informaciÃ³n en Internet."@es ,
+                                "Conocer las medidas de seguridad adoptadas para protegerse contra el ciberacoso."@es ,
+                                "Identificar el tipo de acoso cibernÃ©tico sufrido y, a partir de ello, su caracterizaciÃ³n."@es ,
+                                "Identificar las medidas de seguridad que usa la poblaciÃ³n para proteger cuentas y equipos."@es ;
+            :objetivoGeneral "Generar informaciÃ³n estadÃ­stica que permita conocer la prevalencia de ciberacoso entre la poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet, asÃ­ como la caracterizaciÃ³n de aquella que viviÃ³ alguna situaciÃ³n de ciberacoso en los Ãºltimos 12 meses, incluyendo la identidad y sexo de la persona acosadora, frecuencia del acoso y consecuencias para la vÃ­ctima."@es ;
+            :poblacion12oMas2021 "104200000" ;
+            :porcentajeVictimas "21.7" ;
+            :usuariosDeInternet "81171800" .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS
+:SMS rdf:type owl:NamedIndividual ,
+              :Siglas ;
+     rdfs:label "SMS: servicio de mensaje corto"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM
+:UPM rdf:type owl:NamedIndividual ,
+              :Siglas ;
+     rdfs:label "UPM: Unidad primaria de muestreo."@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1
+:accion1 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Bloquear (a la persona, cuenta o pÃ¡gina)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10
+:accion10 rdf:type owl:NamedIndividual ,
+                   :AccionContraElCiberacoso ;
+          rdfs:label "Denunciar ante las autoridades escolares o laborales"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11
+:accion11 rdf:type owl:NamedIndividual ,
+                   :AccionContraElCiberacoso ;
+          rdfs:label "Otra"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12
+:accion12 rdf:type owl:NamedIndividual ,
+                   :AccionContraElCiberacoso ;
+          rdfs:label "Ninguna"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13
+:accion13 rdf:type owl:NamedIndividual ,
+                   :AccionContraElCiberacoso ;
+          rdfs:label "No sabe, no responde"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2
+:accion2 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3
+:accion3 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Eliminar la publicaciÃ³n, el mensaje o video"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4
+:accion4 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Reclamar o confrontar a la persona"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5
+:accion5 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Denunciar ante el Ministerio PÃºblico o policÃ­a"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6
+:accion6 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Reportar con el proveedor del servicio o plataforma"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7
+:accion7 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Informar a una persona (padres, amigos, etcÃ©tera)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8
+:accion8 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Ignorar o no contestar"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9
+:accion9 rdf:type owl:NamedIndividual ,
+                  :AccionContraElCiberacoso ;
+         rdfs:label "Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1
+:efecto1 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Nervios"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10
+:efecto10 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "PÃ©rdida de trabajo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11
+:efecto11 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "DaÃ±o a su imagen profesional, laboral"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12
+:efecto12 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "DaÃ±o a su imagen escolar (bullying)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13
+:efecto13 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "DaÃ±o a su imagen personal, excluya imagen laboral y escolar"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14
+:efecto14 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "Otro"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15
+:efecto15 rdf:type owl:NamedIndividual ,
+                   :EfectoEnLaVictima ;
+          rdfs:label "No sabe, no responde"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2
+:efecto2 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Miedo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3
+:efecto3 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "EstrÃ©s"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4
+:efecto4 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Desconfianza"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5
+:efecto5 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "FrustraciÃ³n"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6
+:efecto6 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Inseguridad"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7
+:efecto7 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Enojo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8
+:efecto8 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "Problemas con familiares, novio, novia, pareja, amigos o amigas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9
+:efecto9 rdf:type owl:NamedIndividual ,
+                  :EfectoEnLaVictima ;
+         rdfs:label "PÃ©rdida de dinero"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1
+:identidad1 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Novio, novia o pareja"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10
+:identidad10 rdf:type owl:NamedIndividual ,
+                      :IdentidadPersonaAcosadora ;
+             rdfs:label "No sabe, no responde"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2
+:identidad2 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Ex-novio, ex-novia o ex-pareja"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3
+:identidad3 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Familiar"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4
+:identidad4 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Amigo o amiga"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5
+:identidad5 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "CompaÃ±ero o compaÃ±era de clase o de trabajo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6
+:identidad6 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Conocido o conocida de poco trato"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7
+:identidad7 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Conocido o conocida sÃ³lo de vista"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8
+:identidad8 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Desconocido o desconocida"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9
+:identidad9 rdf:type owl:NamedIndividual ,
+                     :IdentidadPersonaAcosadora ;
+            rdfs:label "Otro"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1
+:medidaDeSeguridad1 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2
+:medidaDeSeguridad2 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3
+:medidaDeSeguridad3 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "Bloquear ventanas emergentes del navegador"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4
+:medidaDeSeguridad4 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "Cambiar periÃ³dicamente las contraseÃ±as"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5
+:medidaDeSeguridad5 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "No ingresar a sitios web inseguros o pÃ¡ginas desconocidas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6
+:medidaDeSeguridad6 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:label "No abrir ni guardar archivos que envÃ­an personas desconocidas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7
+:medidaDeSeguridad7 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:comment "Se cambiÃ³ \"No publicar mi correo o nÃºmero telefÃ³nico en redes sociales\" por \"No publicar el correo o nÃºmero telefÃ³nico en redes sociales\""@es ;
+                    rdfs:label "No publicar el correo o nÃºmero telefÃ³nico en redes sociales"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8
+:medidaDeSeguridad8 rdf:type owl:NamedIndividual ,
+                             :MedidaDeSeguridad ;
+                    rdfs:comment "Otra"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1
+:medio1 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Whatsapp"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10
+:medio10 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "Correo electrÃ³nico institucional"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11
+:medio11 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "Correo electrÃ³nico personal"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12
+:medio12 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "Llamadas de telÃ©fono celular"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13
+:medio13 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "Llamadas de telÃ©fono fijo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14
+:medio14 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "Otro"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15
+:medio15 rdf:type owl:NamedIndividual ,
+                  :MedioDigital ;
+         rdfs:label "No sabe, no responde"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2
+:medio2 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Facebook"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3
+:medio3 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Messenger"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4
+:medio4 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Instagram"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5
+:medio5 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "TikTok"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6
+:medio6 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Telegram"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7
+:medio7 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Twitter"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8
+:medio8 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "Youtube"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9
+:medio9 rdf:type owl:NamedIndividual ,
+                 :MedioDigital ;
+        rdfs:label "SMS"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1
+:motivo1 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Enojo o frustraciÃ³n"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10
+:motivo10 rdf:type owl:NamedIndividual ,
+                   :MotivacionPersonaAcosadora ;
+          rdfs:label "No sabe, no responde"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2
+:motivo2 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Deseo de venganza"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3
+:motivo3 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Por diversiÃ³n"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4
+:motivo4 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Odio o desprecio"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5
+:motivo5 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Envidia o celos"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6
+:motivo6 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Intimidarle o causarle miedo"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7
+:motivo7 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Para obtener un beneficio econÃ³mico"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8
+:motivo8 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:comment "Para que la persona encuestada hiciera o dejara de hacer algo (extorsiÃ³n)"@es ;
+         rdfs:label "Para que hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9
+:motivo9 rdf:type owl:NamedIndividual ,
+                  :MotivacionPersonaAcosadora ;
+         rdfs:label "Otro"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1
+:situacion1 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora le enviÃ³ mensajes ofensivos, con insultos o burlas"@es ;
+            rdfs:label "Le enviÃ³ mensajes ofensivos, con insultos o burlas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10
+:situacion10 rdf:type owl:NamedIndividual ,
+                      :SituacionDeAcosoExperimentada ;
+             rdfs:comment "La persona acosadora publicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, de la persona encuestada o vÃ­ctima"@es ,
+                          "La redacciÃ³n de la situaciÃ³n 10 se modificÃ³, la original es: \"PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados, de usted sin su consentimiento\""@es ;
+             rdfs:label "PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, sin consentimiento de la persona encuestada o vÃ­ctima"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11
+:situacion11 rdf:type owl:NamedIndividual ,
+                      :SituacionDeAcosoExperimentada ;
+             rdfs:comment "La persona acosadora publicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"@es ;
+             rdfs:label "PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12
+:situacion12 rdf:type owl:NamedIndividual ,
+                      :SituacionDeAcosoExperimentada ;
+             rdfs:comment "La persona acosadora amenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"@es ;
+             rdfs:label "AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13
+:situacion13 rdf:type owl:NamedIndividual ,
+                      :SituacionDeAcosoExperimentada ;
+             rdfs:label "Otra"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2
+:situacion2 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora le hizo llamadas ofensivas, con insultos o burlas"@es ;
+            rdfs:label "Le hizo llamadas ofensivas, con insultos o burlas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3
+:situacion3 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"@es ;
+            rdfs:label "Lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4
+:situacion4 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"@es ;
+            rdfs:label "Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5
+:situacion5 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"@es ;
+            rdfs:label "Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6
+:situacion6 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora vigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"@es ;
+            rdfs:label "VigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7
+:situacion7 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"@es ;
+            rdfs:label "Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8
+:situacion8 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora le hizo insinuaciones o propuestas de tipo sexual que le molestaron"@es ;
+            rdfs:label "Le hizo insinuaciones o propuestas de tipo sexual que le molestaron"@es .
+
+
+###  http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9
+:situacion9 rdf:type owl:NamedIndividual ,
+                     :SituacionDeAcosoExperimentada ;
+            rdfs:comment "La persona acosadora le enviÃ³ fotos o videos de contenido sexual que le molestaron"@es ;
+            rdfs:label "Le enviÃ³ fotos o videos de contenido sexual que le molestaron"@es .
+
+
+###  https://www.mauxmedina.com/sem/csELD.html
+<https://www.mauxmedina.com/sem/csELD.html> rdf:type owl:NamedIndividual .
+
+
+###  https://www.mauxmedina.com/sem/csJDLCM.html
+<https://www.mauxmedina.com/sem/csJDLCM.html> rdf:type owl:NamedIndividual .
+
+
+###  https://www.mauxmedina.com/sem/csYHV.html
+<https://www.mauxmedina.com/sem/csYHV.html> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:MOCIBA2021 rdfs:comment "Los datos del MÃ³dulo sobre Ciberacoso 2021 (MOCIBA 2021) del Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI), se recolectaron a travÃ©s de un cuestionario formado por 14 preguntas. El levantamiento se llevÃ³ a cabo junto con la Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares (ENDUTIH)."@es ,
+                         "MOCIBA 2021: MÃ³dulo sobre ciberacoso.  Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)."@es ;
+            rdfs:label "MOCIBA 2021"@es ;
+            rdfs:seeAlso "MÃ³dulo sobre Ciberacoso (MOCIBA) 2021. Disponible en: http://inegi.org.mx/programas/mociba/2021"@es .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

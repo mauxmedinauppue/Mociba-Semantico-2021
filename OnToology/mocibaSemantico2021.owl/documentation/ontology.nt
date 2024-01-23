@@ -1,0 +1,961 @@
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2002/07/owl#> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/contributor> <http://www.mauxmedina.com/sem/csDAD.html> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/contributor> <https://www.mauxmedina.com/sem/csELD.html> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/contributor> <https://www.mauxmedina.com/sem/csJDLCM.html> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/contributor> <https://www.mauxmedina.com/sem/csYHV.html> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/creator> <http://www.mauxmedina.com/sem/csMAMN.html> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/description> "Un vocabulario para organizar los conceptos del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)"@en .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/modified> "2023-01-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/rights> "Copyright 2023 colaboraciones semÃ¡nticas "@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/dc/elements/1.1/title> "Vocabulario de ciberacoso "@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "moci" .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.mauxmedina.com/vocabularies/mocibaSemantico2021/moci#" .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2000/01/rdf-schema#comment> ""@en .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2000/01/rdf-schema#label> "MOCIBA semantico 2021"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona acosadora actÃºa por alguno o varios motivos, Ã©stos estÃ¡n representados como elementos de la clase MotivacionPersonaAcosadora."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#actuaPor> <http://www.w3.org/2000/01/rdf-schema#label> "actua por"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"afectaA\" estÃ¡ asociada con la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, dÃ­game si por telÃ©fono, celular o internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona acosadora \"afectaA\" una vÃ­ctima. La existencia de esta relaciÃ³n describe en su forma mÃ¡s simple, representa una situaciÃ³n de acoso."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#afectaA> <http://www.w3.org/2000/01/rdf-schema#label> "afecta a"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/2000/01/rdf-schema#comment> "Algunas veces, una persona vÃ­ctima identifica a una o mÃ¡s personas acosadoras; las identidades de las personas acosadoras estÃ¡n representadas como elementos de la clase IdentidadPersonaAcosadora."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identificaA> <http://www.w3.org/2000/01/rdf-schema#label> "identifica a"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona vÃ­ctima percibe o experimenta situaciones de acoso, Ã©stas estÃ¡n representadas como elementos de la clase SituacionDeAcosoExperimentada."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#percibe> <http://www.w3.org/2000/01/rdf-schema#label> "percibe"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/2000/01/rdf-schema#comment> "Una persona encuestada o una persona acosadora utiliza medios digitales, Ã©stos estÃ¡n representados como elementos de la clase MedioDigital."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usa> <http://www.w3.org/2000/01/rdf-schema#label> "usa"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"disenioEstadistico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico> <http://www.w3.org/2000/01/rdf-schema#label> "disenioEstadistico"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no sabe, no responde" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "mÃ¡s de 60 aÃ±os" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "menos de 12 aÃ±os" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "46 a 60 aÃ±os" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "36 a 45 aÃ±os" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "26 a 35 aÃ±os" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "18 a 25 aÃ±os" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "12 a 17 aÃ±os" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"edadPersonaAcosadora\" estÃ¡ asociada con la pregunta 7 del cuestionario MOCIBA 2021 que a la letra dice: \"7. Aproximadamente, Â¿quÃ© edad tiene(n) esa(s) persona(s)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"edadPersonaAcosadora\" representa la edad de la persona acosadora."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#edadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#label> "edadPersonaAcosadora"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#oneOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Una vez" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Pocas veces" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe, no responde" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Muchas veces" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Algunas veces" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"frecuenciaCiberacoso\" estÃ¡ asociada con la pregunta 9 del cuestionario MOCIBA 2021 que a la letra dice: \"9. Esta situaciÃ³n, Â¿ocurriÃ³ ...\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"frecuenciaCiberacoso\" representa la frecuencia de alguna de las situaciones de ciberacoso"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#frecuenciaCiberacoso> <http://www.w3.org/2000/01/rdf-schema#label> "frecuenciaCiberacoso"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#oneOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "si" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe, no responde" .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"haRecibidioCorreoBasura_o_virus\" estÃ¡ asociada con la pregunta 3 del cuestionario MOCIBA 2021 que a la letra dice: \"3. En el Ãºltimo aÃ±o, esto es, de agosto 2020 a la fecha, Â¿ha recibido correo basura (spam) o virus para daÃ±ar sus equipos o informaciÃ³n?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"haRecibidoCorreoBasura_o_virus\" representa si la persona encuestada ha recibido correo basura (spam) o virus"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#haRecibidoCorreoBasura_o_virus> <http://www.w3.org/2000/01/rdf-schema#label> "haRecibidoCorreoBasura_o_virus"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"hogarEnVivienda\" representa el nÃºmero de hogar de la persona encuestada"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#hogarEnVivienda> <http://www.w3.org/2000/01/rdf-schema#label> "hogarEnVivienda"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#range> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#oneOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Poco importante" .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe, no responde" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Nada importante" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Muy importante" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Algo importante" .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"importanciaProteccionDeDatos\" estÃ¡ asociada con la pregunta 13 del cuestionario MOCIBA 2021 que a la letra dice: \"13. Â¿Para usted quÃ© tan importante es cuidar su informaciÃ³n en Internet?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"importanciaProteccionDeDatos\" representa la importancia de la protecciÃ³n de datos que reporta la persona encuestada"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#importanciaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#label> "importanciaProteccionDeDatos"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"numeroDeVivienda\" representa el nÃºmero de vivienda de la persona encuestada"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroDeVivienda> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDeVivienda"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"numeroDeVictimasDeCiberacoso\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDeVictimasDeCiberacoso"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"numeroDeVictimasHombres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDeVictimasHombres"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"numeroDeVictimasMujeres\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDeVictimasMujeres"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"objetivoEspecifico\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> <http://www.w3.org/2000/01/rdf-schema#label> "objetivoEspecifico"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"Objetivo general\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "objetivoGeneral"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"poblacion12oMasAnios\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> <http://www.w3.org/2000/01/rdf-schema#label> "poblacion12oMasAnios"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"porcentajeDeVictimas\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas> <http://www.w3.org/2000/01/rdf-schema#label> "porcentajeDeVictimas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#oneOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Poco" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe, no responde" .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Nada" .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Mucho" .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Algo" .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"queTantoImportaProteccionDeDatos\" estÃ¡ asociada con la pregunta 14 del cuestionario MOCIBA 2021 que a la letra dice: \"14. Â¿Y quÃ© tanto considera usted que protege su informaciÃ³n en Internet?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"queTantoImportaProteccionDeDatos\" representa quÃ© tan importante es la protecciÃ³n de datos segÃºn la percepciÃ³n de la persona encuestada"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#queTantoImportaProteccionDeDatos> <http://www.w3.org/2000/01/rdf-schema#label> "queTantoImportaProteccionDeDatos"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#range> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#oneOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Si" .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe, no responde" .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No" .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"realizaMedidaDeSeguridad\" estÃ¡ asociada con la pregunta 1 del cuestionario MOCIBA 2021, que a la letra dice: \"1. Â¿Usted realiza alguna medida de seguridad para proteger su computadora, tablet, celular o cuentas de internet?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"realizaMedidaDeSeguridad\" representa si la persona encuestada realiza o no una medida de seguridad"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#realizaMedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#label> "realizaMedidaDeSeguridad"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#range> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#oneOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "No sabe" .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Mujer" .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Hombre y mujer" .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Hombre" .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"sexoPersonaAcosadora\" estÃ¡ asociada con la pregunta 6 del cuestionario MOCIBA 2021 que a la letra dice: \"6. Esta(s) persona(s), es(son) hombre(s) o mujer(es)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"sexoPersonaAcosadora\" representa el sexo de la persona acosadora."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#sexoPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#label> "sexoPersonaAcosadora"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad \"usuariosDeInternet\" contiene informaciÃ³n del reporte \"MÃ³dulo sobre Ciberacoso MOCIBA 2021: principales resultados\". Disponible en: http://inegi.org.mx/programas/mociba/2021."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet> <http://www.w3.org/2000/01/rdf-schema#label> "Usuarios de internet"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"AccionContraElCiberacoso\" estÃ¡ asociada con la pregunta 12 del cuestionario MOCIBA 2021 que a la letra dice: \"12. Â¿QuÃ© acciones tomÃ³ o ha tomado como consecuencia de la(s) situaciÃ³n(es) que viviÃ³(vive)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "Las acciones o medidas que ha realizado la persona vÃ­ctima de ciberacoso como consecuencia de la situaciÃ³n o situaciones que vive o viviÃ³ son:\n\n1) Bloquear (a la persona, cuenta o pÃ¡gina)\n2) Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a\n3) Eliminar la publicaciÃ³n, el mensaje o video\n4) Reclamar o confrontar a la persona\n5) Denunciar ante el Ministerio PÃºblico o policÃ­a\n6) Reportar con el proveedor del servicio o plataforma\n7) Informar a una persona (padre, amigos, etcÃ©tera)\n8) Ignorar o no contestar\n9) Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc.)\n10) Denunciar ante las autoridades escolares o laborales\n11) Otra\n12) Ninguna\n13) No sabe o no responde"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> <http://www.w3.org/2000/01/rdf-schema#label> "AcciÃ³n contra el ciberacoso"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AcosoCibernetico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "El ciberacoso es un acto intencionado, ya sea por parte de un individuo o un grupo, teniendo como fin el daÃ±ar o molestar a una persona mediante el uso de tecnologÃ­as de informaciÃ³n y comunicaciÃ³n (TIC), en especÃ­fico, el internet."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> <http://www.w3.org/2000/01/rdf-schema#comment> "El ciberacoso puede generar daÃ±os morales, psicolÃ³gicos y econÃ³micos, incluso, provocar ideaciones suicidas en la vÃ­ctima y con ello, crear una forma de victimizaciÃ³n relevante."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Ciberacoso> <http://www.w3.org/2000/01/rdf-schema#label> "Ciberacoso" .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"EfectoEnLaVictima\" estÃ¡ asociada con la pregunta 10 del cuestionario MOCIBA 2021 que a la letra dice: \"10. De la tarjeta 3, dÃ­game Â¿quÃ© le provocÃ³ esta situaciÃ³n?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> <http://www.w3.org/2000/01/rdf-schema#comment> "Los efectos en la vÃ­ctima que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\" son: \n1) Nervios\n2) Miedo\n3) EstrÃ©s\n4) Desconfianza\n5) FrustraciÃ³n\n6) Inseguridad\n7) Enojo\n8) Problemas con familiares, novio, pareja, amigos o amigas\n9) PÃ©rdida de dinero\n10) PÃ©rdida de trabajo\n11) DaÃ±o a su imagen profesional / laboral\n12) DaÃ±o a su imagen personal, excluya imagen laboral y escolar\n13) DaÃ±o a su imagen escolar (bullying)\n14) Otro\n15) No sabe o no responde"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> <http://www.w3.org/2000/01/rdf-schema#label> "Efecto en la vÃ­ctima"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"IdentidadDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 5 del cuestionario MOCIBA 2021 que a la letra dice: \"5. Â¿QuiÃ©nes realizaron la situcaciÃ³n nÃºmero (NÃšMERO DE SITUACIÃ“N EN PREGUNTA 4)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La identidad de la persona acosadora se refiere a la relaciÃ³n que tiene con la vÃ­ctiva. Las identidades pueden ser:\n\n1) Novio, novia o pareja actual\n2) Ex-novio, ex-novia o ex-pareja\n3) Familiar\n4) Amigo o amiga\n5) CompaÃ±ero o compaÃ±era de clase o de trabajo\n6) Conocido o conocida de poco trato\n7) Conocido o conocida solo de vista\n8) Desconocido o desconocida\n9) Otro\n10) No sabe o no responde"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#label> "Identidad de la persona acosadora"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021> .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021> <http://www.w3.org/2000/01/rdf-schema#comment> "El objetivo del vocabulario MOCIBA SemÃ¡ntico 2021 es representar los conceptos y las relaciones provenientes del MÃ³dulo sobre Ciberacoso (MOCIBA) aplicado en el 2021 por el Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI) a travÃ©s tecnologÃ­as semÃ¡nticas."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA_Semantico_2021> <http://www.w3.org/2000/01/rdf-schema#label> "MOCIBA SemÃ¡ntico 2021"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"MedidaDeSeguridad\" estÃ¡ asociada a la pregunta 2 del cuestionario MOCIBA 2021 que a la letra dice: \"2. Â¿QuÃ© medidas de seguridad realiza\"?."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#comment> "Las medidas de seguridad que podrÃ­a realizar la persona encuestada son:\n1) Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)\n2) Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as\n3) Bloquear ventanas emergentes del navegador\n4) Cambiar periÃ³dicamente las contraseÃ±as\n5) No ingresar a sitios web inseguros o pÃ¡ginas desconocidas\n6) No abrir ni guardar archivos que envÃ­an personas desconocidas\n7) No publicar el correo o nÃºmero telefÃ³nico en redes sociales\n8) Otra"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> <http://www.w3.org/2000/01/rdf-schema#label> "Medida de seguridad"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"MedioDigital\" estÃ¡ asociada con la pregunta 11 del cuestionario MOCIBA 2021 que a la letra dice: \"11. Â¿QuÃ© medios digitales usÃ³(usaron) la(s) persona(s) para molestarle o daÃ±arle?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> <http://www.w3.org/2000/01/rdf-schema#comment> "Los medios digitales usados por la persona acosadora son:\n1) Whatsapp\n2) Facebook\n3) Messenger\n4) Instagram\n5) TikTok\n6) Telegram\n7) Twitter\n8) Youtube\n9) SMS\n10) Correo electrÃ³nico institucional\n11) Correo electrÃ³nico personal\n12) Llamadas de telÃ©fono celular\n13) Llamadas de telÃ©fono fijo\n14) Otro\n15) No sabe o no responde"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> <http://www.w3.org/2000/01/rdf-schema#label> "Medio digital"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"MotivacionDeLaPersonaAcosadora\" estÃ¡ asociada con la pregunta 8 del cuestionario que a la letra dice: \"8. Â¿Por quÃ© cree que lo hizo (RESPUESTA EN PREGUNTA 5)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "Los motivos por los que actÃºa una persona acosadora son:\n1) Enojo o frustraciÃ³n\n2) Deseo de venganza\n3) Por diversiÃ³n\n4) Odio o desprecio\n5) Envidia o celos\n6) Intimidarle o causarle miedo\n7) Para obtener un beneficio econÃ³mico\n8) Para que la vÃ­ctima hiciera o dejara de hacer algo\n9) Otro\n10) No sabe o no responde"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#label> "MotivaciÃ³n de la persona acosadora"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que ha realizado al menos alguna de las situaciones descritas en la clase  \"SituaciÃ³n de acoso experimentada\""@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaAcosadora> <http://www.w3.org/2000/01/rdf-schema#label> "Persona acosadora"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que contesta el cuestionario del mÃ³dulo MOCIBA, es mayor a 12 aÃ±os y usa internet en cualquier dispositivo."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#PersonaEncuestada> <http://www.w3.org/2000/01/rdf-schema#label> "Persona encuestada"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> <http://www.w3.org/2000/01/rdf-schema#label> "Siglas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> <http://www.w3.org/2000/01/rdf-schema#comment> "La clase \"SituacionDeAcosoExperimentada\" estÃ¡ asociada con las respuestas a la pregunta 4 del cuestionario MOCIBA 2021 que a la letra dice: \"4. En el Ãºltimo aÃ±o, esto es, de agosto de 2020 a la fecha, dÃ­game si por telÃ©fono, celular o Internet, Â¿alguien realizÃ³ la situaciÃ³n (NÃšMERO DE SITUACIÃ“N)?\"."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> <http://www.w3.org/2000/01/rdf-schema#comment> "Las situaciones de acoso que informa una persona encuestada por parte de una o mÃ¡s personas acosadoras son: \n\n1) Le enviÃ³ mensajes ofensivos, con insultos o burlas\n2) Le hizo llamadas ofensivas, con insultos o burlas\n3) Lo o la criticÃ³ en lÃ­nea por su apariencia (forma de vestir, tono de piel, peso, estatura, etc.) o clase social\n4) Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas\n5) Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle\n6) VigilÃ³ sus sitios o cuentas en internet para causarle molestia o daÃ±o\n7) Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa\n8) Le hizo insinuaciones o propuestas de tipo sexual que le molestaron\n9) Le enviÃ³ fotos o videos de contenido sexual que le molestaron\n10) PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados de usted sin su consentimiento\n11) PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual.\n12) AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)\n13) Otra"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> <http://www.w3.org/2000/01/rdf-schema#label> "SituaciÃ³n de acoso experimentada"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que ha experimentado alguna de las situaciones descritas en la clase \"SituaciÃ³n de acoso experimentada\""@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Victima> <http://www.w3.org/2000/01/rdf-schema#label> "VÃ­ctima"@es .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Persona" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.mauxmedina.com/sem/csDAD.html
+<http://www.mauxmedina.com/sem/csDAD.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.mauxmedina.com/sem/csMAMN.html
+<http://www.mauxmedina.com/sem/csMAMN.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#ENDUTIH> <http://www.w3.org/2000/01/rdf-schema#label> "ENDUTIH: Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares."@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#INEGI> <http://www.w3.org/2000/01/rdf-schema#label> "INEGI: Instituto Nacional de EstadÃ­stica y GeografÃ­a"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA> <http://www.w3.org/2000/01/rdf-schema#label> "MOCIBA: mÃ³dulo sobre ciberacoso."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA> <http://www.w3.org/2000/01/rdf-schema#label> "MÃ³dulo sobre ciberacoso. Para persona elegida de 12 y mÃ¡s aÃ±os que use internet en cualquier dispositivo."@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#disenioEstadistico> "El diseÃ±o estadÃ­stico de MOCIBA 2021 es:\n\n1) Periodo de referencia de la informaciÃ³n: Agosto de 2020 - Septiembre de 2021.\n2) SelecciÃ³n de la muestra: probabilÃ­stico (polietÃ¡pico, estratificado y por conglomerados)\n3) Forma de captaciÃ³n: entrevista cara a cara aplicada mediante dispositivo electrÃ³nico\n4) PoblaciÃ³n objeto de estudio: poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet en cualquier tipo de dispositivo en los tres meses anteriores al levantamiento\n5) Periodo de captaciÃ³n de informaciÃ³n: 2 de Agosto al 30 de septiembre de 2021\n6) TamaÃ±o de muestra nacional: 65 179 viviendas\n7) Cobertura geogrÃ¡fica: a nivel nacional y por entidad federativa"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasCiberacoso> "17700000" .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasHombres> "8000000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#numeroVictimasMujeres> "9700000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Conocer el nÃºmero de personas que fueron vÃ­ctimas de alguna situaciÃ³n de ciberacoso."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Conocer en quÃ© medida la poblaciÃ³n protege sus datos en Internet."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Conocer la percepciÃ³n de la poblaciÃ³n sobre la importancia de proteger su informaciÃ³n en Internet."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Conocer las medidas de seguridad adoptadas para protegerse contra el ciberacoso."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Identificar el tipo de acoso cibernÃ©tico sufrido y, a partir de ello, su caracterizaciÃ³n."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoEspecifico> "Identificar las medidas de seguridad que usa la poblaciÃ³n para proteger cuentas y equipos."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#objetivoGeneral> "Generar informaciÃ³n estadÃ­stica que permita conocer la prevalencia de ciberacoso entre la poblaciÃ³n de 12 aÃ±os y mÃ¡s usuaria de Internet, asÃ­ como la caracterizaciÃ³n de aquella que viviÃ³ alguna situaciÃ³n de ciberacoso en los Ãºltimos 12 meses, incluyendo la identidad y sexo de la persona acosadora, frecuencia del acoso y consecuencias para la vÃ­ctima."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#poblacion12oMas2021> "104200000" .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#porcentajeVictimas> "21.7" .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#usuariosDeInternet> "81171800" .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SMS> <http://www.w3.org/2000/01/rdf-schema#label> "SMS: servicio de mensaje corto"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#Siglas> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#UPM> <http://www.w3.org/2000/01/rdf-schema#label> "UPM: Unidad primaria de muestreo."@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion1> <http://www.w3.org/2000/01/rdf-schema#label> "Bloquear (a la persona, cuenta o pÃ¡gina)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion10> <http://www.w3.org/2000/01/rdf-schema#label> "Denunciar ante las autoridades escolares o laborales"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion11> <http://www.w3.org/2000/01/rdf-schema#label> "Otra"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion12> <http://www.w3.org/2000/01/rdf-schema#label> "Ninguna"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion13> <http://www.w3.org/2000/01/rdf-schema#label> "No sabe, no responde"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion2> <http://www.w3.org/2000/01/rdf-schema#label> "Cambiar o cancelar nÃºmero telefÃ³nico, cuenta o contraseÃ±a"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion3> <http://www.w3.org/2000/01/rdf-schema#label> "Eliminar la publicaciÃ³n, el mensaje o video"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion4> <http://www.w3.org/2000/01/rdf-schema#label> "Reclamar o confrontar a la persona"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion5> <http://www.w3.org/2000/01/rdf-schema#label> "Denunciar ante el Ministerio PÃºblico o policÃ­a"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion6> <http://www.w3.org/2000/01/rdf-schema#label> "Reportar con el proveedor del servicio o plataforma"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion7> <http://www.w3.org/2000/01/rdf-schema#label> "Informar a una persona (padres, amigos, etcÃ©tera)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion8> <http://www.w3.org/2000/01/rdf-schema#label> "Ignorar o no contestar"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#AccionContraElCiberacoso> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#accion9> <http://www.w3.org/2000/01/rdf-schema#label> "Publicar la situaciÃ³n en redes sociales (Facebook, Twitter, etc)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto1> <http://www.w3.org/2000/01/rdf-schema#label> "Nervios"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto10> <http://www.w3.org/2000/01/rdf-schema#label> "PÃ©rdida de trabajo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto11> <http://www.w3.org/2000/01/rdf-schema#label> "DaÃ±o a su imagen profesional, laboral"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto12> <http://www.w3.org/2000/01/rdf-schema#label> "DaÃ±o a su imagen escolar (bullying)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto13> <http://www.w3.org/2000/01/rdf-schema#label> "DaÃ±o a su imagen personal, excluya imagen laboral y escolar"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto14> <http://www.w3.org/2000/01/rdf-schema#label> "Otro"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto15> <http://www.w3.org/2000/01/rdf-schema#label> "No sabe, no responde"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto2> <http://www.w3.org/2000/01/rdf-schema#label> "Miedo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto3> <http://www.w3.org/2000/01/rdf-schema#label> "EstrÃ©s"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto4> <http://www.w3.org/2000/01/rdf-schema#label> "Desconfianza"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto5> <http://www.w3.org/2000/01/rdf-schema#label> "FrustraciÃ³n"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto6> <http://www.w3.org/2000/01/rdf-schema#label> "Inseguridad"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto7> <http://www.w3.org/2000/01/rdf-schema#label> "Enojo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto8> <http://www.w3.org/2000/01/rdf-schema#label> "Problemas con familiares, novio, novia, pareja, amigos o amigas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#EfectoEnLaVictima> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#efecto9> <http://www.w3.org/2000/01/rdf-schema#label> "PÃ©rdida de dinero"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad1> <http://www.w3.org/2000/01/rdf-schema#label> "Novio, novia o pareja"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad10> <http://www.w3.org/2000/01/rdf-schema#label> "No sabe, no responde"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad2> <http://www.w3.org/2000/01/rdf-schema#label> "Ex-novio, ex-novia o ex-pareja"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad3> <http://www.w3.org/2000/01/rdf-schema#label> "Familiar"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad4> <http://www.w3.org/2000/01/rdf-schema#label> "Amigo o amiga"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad5> <http://www.w3.org/2000/01/rdf-schema#label> "CompaÃ±ero o compaÃ±era de clase o de trabajo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad6> <http://www.w3.org/2000/01/rdf-schema#label> "Conocido o conocida de poco trato"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad7> <http://www.w3.org/2000/01/rdf-schema#label> "Conocido o conocida sÃ³lo de vista"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad8> <http://www.w3.org/2000/01/rdf-schema#label> "Desconocido o desconocida"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#IdentidadPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#identidad9> <http://www.w3.org/2000/01/rdf-schema#label> "Otro"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad1> <http://www.w3.org/2000/01/rdf-schema#label> "Crear o poner contraseÃ±as (claves, huella digital, patrÃ³n, etcÃ©tera)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad2> <http://www.w3.org/2000/01/rdf-schema#label> "Instalar o actualizar programas antivirus, cortafuegos o antiespÃ­as"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad3> <http://www.w3.org/2000/01/rdf-schema#label> "Bloquear ventanas emergentes del navegador"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad4> <http://www.w3.org/2000/01/rdf-schema#label> "Cambiar periÃ³dicamente las contraseÃ±as"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad5> <http://www.w3.org/2000/01/rdf-schema#label> "No ingresar a sitios web inseguros o pÃ¡ginas desconocidas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad6> <http://www.w3.org/2000/01/rdf-schema#label> "No abrir ni guardar archivos que envÃ­an personas desconocidas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7> <http://www.w3.org/2000/01/rdf-schema#comment> "Se cambiÃ³ \"No publicar mi correo o nÃºmero telefÃ³nico en redes sociales\" por \"No publicar el correo o nÃºmero telefÃ³nico en redes sociales\""@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad7> <http://www.w3.org/2000/01/rdf-schema#label> "No publicar el correo o nÃºmero telefÃ³nico en redes sociales"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedidaDeSeguridad> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medidaDeSeguridad8> <http://www.w3.org/2000/01/rdf-schema#comment> "Otra"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio1> <http://www.w3.org/2000/01/rdf-schema#label> "Whatsapp"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio10> <http://www.w3.org/2000/01/rdf-schema#label> "Correo electrÃ³nico institucional"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio11> <http://www.w3.org/2000/01/rdf-schema#label> "Correo electrÃ³nico personal"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio12> <http://www.w3.org/2000/01/rdf-schema#label> "Llamadas de telÃ©fono celular"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio13> <http://www.w3.org/2000/01/rdf-schema#label> "Llamadas de telÃ©fono fijo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio14> <http://www.w3.org/2000/01/rdf-schema#label> "Otro"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio15> <http://www.w3.org/2000/01/rdf-schema#label> "No sabe, no responde"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio2> <http://www.w3.org/2000/01/rdf-schema#label> "Facebook"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio3> <http://www.w3.org/2000/01/rdf-schema#label> "Messenger"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio4> <http://www.w3.org/2000/01/rdf-schema#label> "Instagram"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio5> <http://www.w3.org/2000/01/rdf-schema#label> "TikTok"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio6> <http://www.w3.org/2000/01/rdf-schema#label> "Telegram"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio7> <http://www.w3.org/2000/01/rdf-schema#label> "Twitter"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio8> <http://www.w3.org/2000/01/rdf-schema#label> "Youtube"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MedioDigital> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#medio9> <http://www.w3.org/2000/01/rdf-schema#label> "SMS"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo1> <http://www.w3.org/2000/01/rdf-schema#label> "Enojo o frustraciÃ³n"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo10> <http://www.w3.org/2000/01/rdf-schema#label> "No sabe, no responde"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo2> <http://www.w3.org/2000/01/rdf-schema#label> "Deseo de venganza"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo3> <http://www.w3.org/2000/01/rdf-schema#label> "Por diversiÃ³n"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo4> <http://www.w3.org/2000/01/rdf-schema#label> "Odio o desprecio"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo5> <http://www.w3.org/2000/01/rdf-schema#label> "Envidia o celos"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo6> <http://www.w3.org/2000/01/rdf-schema#label> "Intimidarle o causarle miedo"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo7> <http://www.w3.org/2000/01/rdf-schema#label> "Para obtener un beneficio econÃ³mico"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8> <http://www.w3.org/2000/01/rdf-schema#comment> "Para que la persona encuestada hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo8> <http://www.w3.org/2000/01/rdf-schema#label> "Para que hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MotivacionPersonaAcosadora> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#motivo9> <http://www.w3.org/2000/01/rdf-schema#label> "Otro"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora le enviÃ³ mensajes ofensivos, con insultos o burlas"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion1> <http://www.w3.org/2000/01/rdf-schema#label> "Le enviÃ³ mensajes ofensivos, con insultos o burlas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora publicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, de la persona encuestada o vÃ­ctima"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10> <http://www.w3.org/2000/01/rdf-schema#comment> "La redacciÃ³n de la situaciÃ³n 10 se modificÃ³, la original es: \"PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual reales o simulados, de usted sin su consentimiento\""@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion10> <http://www.w3.org/2000/01/rdf-schema#label> "PublicÃ³, distribuyÃ³, intercambiÃ³ o vendiÃ³ imÃ¡genes, audios o videos de contenido Ã­ntimo sexual, reales o simulados, sin consentimiento de la persona encuestada o vÃ­ctima"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora publicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion11> <http://www.w3.org/2000/01/rdf-schema#label> "PublicÃ³ informaciÃ³n personal, fotos o videos (falsos o verdaderos) de usted para daÃ±arlo o daÃ±arla. Excluya contenido sexual"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora amenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion12> <http://www.w3.org/2000/01/rdf-schema#label> "AmenazÃ³ con publicar informaciÃ³n personal, imÃ¡genes, audios o videos de usted, (falsos o verdaderos), a cambio de que usted hiciera o dejara de hacer algo (extorsiÃ³n)"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion13> <http://www.w3.org/2000/01/rdf-schema#label> "Otra"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora le hizo llamadas ofensivas, con insultos o burlas"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion2> <http://www.w3.org/2000/01/rdf-schema#label> "Le hizo llamadas ofensivas, con insultos o burlas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion3> <http://www.w3.org/2000/01/rdf-schema#label> "Lo o la criticÃ³ en lÃ­nea por su apariencia, (forma de vestir, tono de piel, peso, estatura, etc.) o clase social"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion4> <http://www.w3.org/2000/01/rdf-schema#label> "Se hizo pasar por usted para enviar informaciÃ³n falsa, insultar o agredir a otras personas"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion5> <http://www.w3.org/2000/01/rdf-schema#label> "Lo o la contactÃ³ con nombres falsos para molestarle o daÃ±arle"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora vigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion6> <http://www.w3.org/2000/01/rdf-schema#label> "VigilÃ³ sus sitios o cuentas en Internet para causarle molestia o daÃ±o"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion7> <http://www.w3.org/2000/01/rdf-schema#label> "Lo o la provocÃ³ (molestÃ³ o retÃ³) en lÃ­nea para que reaccionara de forma negativa"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora le hizo insinuaciones o propuestas de tipo sexual que le molestaron"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion8> <http://www.w3.org/2000/01/rdf-schema#label> "Le hizo insinuaciones o propuestas de tipo sexual que le molestaron"@es .
+# 
+# http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#SituacionDeAcosoExperimentada> .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9> <http://www.w3.org/2000/01/rdf-schema#comment> "La persona acosadora le enviÃ³ fotos o videos de contenido sexual que le molestaron"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#situacion9> <http://www.w3.org/2000/01/rdf-schema#label> "Le enviÃ³ fotos o videos de contenido sexual que le molestaron"@es .
+# 
+# https://www.mauxmedina.com/sem/csELD.html
+<https://www.mauxmedina.com/sem/csELD.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.mauxmedina.com/sem/csJDLCM.html
+<https://www.mauxmedina.com/sem/csJDLCM.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.mauxmedina.com/sem/csYHV.html
+<https://www.mauxmedina.com/sem/csYHV.html> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/2000/01/rdf-schema#comment> "Los datos del MÃ³dulo sobre Ciberacoso 2021 (MOCIBA 2021) del Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI), se recolectaron a travÃ©s de un cuestionario formado por 14 preguntas. El levantamiento se llevÃ³ a cabo junto con la Encuesta Nacional sobre Disponibilidad y Uso de las TecnologÃ­as de InformaciÃ³n y la ComunicaciÃ³n en Hogares (ENDUTIH)."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/2000/01/rdf-schema#comment> "MOCIBA 2021: MÃ³dulo sobre ciberacoso.  Instituto Nacional de EstadÃ­stica y GeografÃ­a (INEGI)."@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/2000/01/rdf-schema#label> "MOCIBA 2021"@es .
+<http://www.mauxmedina.com/vocabularies/mocibaSemantico2021.owl#MOCIBA2021> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MÃ³dulo sobre Ciberacoso (MOCIBA) 2021. Disponible en: http://inegi.org.mx/programas/mociba/2021"@es .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
